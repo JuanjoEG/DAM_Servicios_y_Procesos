@@ -25,8 +25,8 @@ public class Main {
         *  1. TIPOS DE PROGRAMACIÓN.                                 *
         *  2. PROCESOS.                                              *
         *  3. GESTIÓN DE PROCESOS.                                   *
-        *  4.                                                        *
-        *  5.                                                        *
+        *  4. INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO.   *
+        *  5. GESTIÓN DE HILOS.                                      *
         *  6.                                                        *
         *  7.                                                        *
         *  8.                                                        *
