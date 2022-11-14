@@ -16,26 +16,21 @@ public class Productor_01 extends Thread {
      * @param almacen Buffer donde se producirán los recursos
      * @param dormir Tiempo que dormirá el productor
      */
-    public Productor_01(Buffer_Almac_01 almacen, int dormir) {
-        
+    public Productor_01(Buffer_Almac_01 almacen, int dormir) {        
         this.almacen = almacen;
         this.dormir = dormir;
     }
     
-    public void run() {
-        
+    public void run() {        
             
-            for (int i = 0; i < 10; i++) {
-                
-                
-                almacen.put();
-                System.out.println("Turno: " + i + " Productor  pone Una. En Almacen hay:" + almacen.contenido);
-                try {
-                    sleep(dormir);
-                } catch (InterruptedException e) {
-                    System.err.println("Error en el productor: " + e.toString());
-                }
+        for (int i = 0; i < 10; i++) {
+            almacen.put();
+            System.out.println("Turno: " + i + " Productor  pone Una. En Almacen hay:" + almacen.contenido);
+            try {
+                sleep(dormir);
+            } catch (InterruptedException e) {
+                System.err.println("Error en el productor: " + e.toString());
             }
-            
+        }            
     }
 }

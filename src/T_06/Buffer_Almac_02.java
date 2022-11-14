@@ -1,4 +1,3 @@
-
 package T_06;
 
 /**
@@ -9,14 +8,11 @@ public class Buffer_Almac_02 {
     
     public int contenido = 0;
     
-    // VERSIÓN SINCRONIZADA
-    
-    /**
+    // VERSIÓN SINCRONIZADA    
+    /** 
      * DISMINUYE UN VALOR AL ALMACEN
-     * @return Contenido del buffer
      */
-
-    public synchronized int get() {
+    public synchronized void get() {
         // MIENTRAS EL BUFFER ESTÉ A CERO ...
         while (contenido<1) {
             try {
@@ -27,14 +23,12 @@ public class Buffer_Almac_02 {
         // CUANDO YA HAY ALGÚN CONTENIDO EN ALMACEN --> NOTIFICO QUE ESTÁ DISPONIBLE PARA TOMAR
         notify();
         // YA PUEDO TOMAR UNA
-        contenido = contenido - 1;
-        return contenido;
+        contenido = contenido - 1;       
     }
 
     /**
      * AUMENTA UN VALOR AL ALMACEN
      */
-
     public synchronized void put()  {
         // MIENTRAS EL BUFFER TENGA AGÚN CONTENIDO ...
         while (contenido>0) {

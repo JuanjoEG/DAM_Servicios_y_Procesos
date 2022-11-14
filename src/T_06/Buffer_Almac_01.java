@@ -12,18 +12,15 @@ public class Buffer_Almac_01 {
     
     /**
      * DISMINUYE UN VALOR AL ALMACEN
-     * @return Contenido del buffer
      */
-
-    public int get() {
+    public void get() {
         contenido = contenido - 1;
-        return contenido;
+      
     }
 
     /**
      * AUMENTA UN VALOR AL ALMACEN
      */
-
     public void put() {
         contenido = contenido + 1;
     } 
