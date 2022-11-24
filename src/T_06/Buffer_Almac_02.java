@@ -23,7 +23,7 @@ public class Buffer_Almac_02 {
         // CUANDO YA HAY ALGÚN CONTENIDO EN ALMACEN --> NOTIFICO QUE ESTÁ DISPONIBLE PARA TOMAR
         notify();
         // YA PUEDO TOMAR UNA
-        contenido = contenido - 1;       
+        contenido = contenido - 1;        
     }
 
     /**
