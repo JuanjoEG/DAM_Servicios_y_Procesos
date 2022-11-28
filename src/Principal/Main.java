@@ -27,9 +27,9 @@ public class Main {
         *  3. GESTIÓN DE PROCESOS.                                   *
         *  4. INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO.   *
         *  5. GESTIÓN DE HILOS.                                      *
-        *  6. SINCRONIZACIÓN DE VARIOS HILOS                         *
-        *  7.                                                        *
-        *  8.                                                        *
+        *  6. SINCRONIZACIÓN DE VARIOS HILOS.                        *
+        *  7. INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.     *
+        *  8. MODELOS DE COMUNICACIONES.                             *
         *  9.                                                        *
         * 10.                                                        *
         * 11.                                                        *
