@@ -1,22 +1,17 @@
-package T_05;
+package Tema_05;
 
 import static java.lang.Thread.sleep;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
  * @author Juan José Estévez González
  */
-
-public class Hilo1 extends Thread {
+public class Hilo2 implements Runnable {
     
-    // ATRIBUTOS
     private String nombre;
     private int dormir;
     
-    // CONSTRUCTOR POR PARÁMETROS -> CREA OBJETOS -> HILOS.
-    public Hilo1(String nombre, int dormir) {
+    public Hilo2(String nombre, int dormir) {
         
         this.nombre = nombre;
         this.dormir = dormir;
@@ -27,7 +22,7 @@ public class Hilo1 extends Thread {
         
         for (int i = 0; i < 10; i++) {
             
-            System.out.println("Soy el Hilo1 " + nombre + " en la iteración " + i);
+            System.out.println("Soy el hilo2 " + nombre + " en la iteración " + i);
             try {
                 sleep(dormir);
             } catch (InterruptedException ex) {

@@ -1,4 +1,4 @@
-package T_06;
+package Tema_06;
 
 /**
  *

@@ -1,4 +1,4 @@
-package T_06;
+package Tema_06;
 
 /**
  * Esta clase representa el almacén, es decir, el recurso que se produce y se consume
