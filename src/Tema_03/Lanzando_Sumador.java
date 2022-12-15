@@ -97,7 +97,6 @@ public class Lanzando_Sumador {
         
         System.out.println("\nCLASSNAME : " + className);
         
-        // 
         // Creo el proceso a ejecutar
         // Los dos últimos parámetros son los parámetros del método main de la clase 
         ProcessBuilder builder = new ProcessBuilder(javaBin, "-cp",classpath, className, String.valueOf(n1), String.valueOf(n2));

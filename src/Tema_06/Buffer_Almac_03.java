@@ -4,24 +4,25 @@ package Tema_06;
  *
  * @author Juan José Estévez González
  */
-public class Buffer_Almac_01 {
+public class Buffer_Almac_03 {
     
-    public int contenido = 0;
+    private int contenido;
     
     // VERSIÓN NO SINCRONIZADA
     
     /**
      * DISMINUYE UN VALOR AL ALMACEN
+     * @return 
      */
-    public void get_01() {
-        contenido = contenido - 1;
-      
+    public int get_03() {
+        return contenido;      
     }
 
     /**
      * AUMENTA UN VALOR AL ALMACEN
+     * @param valor
      */
-    public void put_01() {
-        contenido = contenido + 1;
+    public void put_03(int valor) {
+        contenido = valor;
     } 
 }

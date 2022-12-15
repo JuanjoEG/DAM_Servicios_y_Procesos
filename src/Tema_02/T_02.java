@@ -1,4 +1,4 @@
-package Tema_09;
+package Tema_02;
 
 import static Principal_Main.Main.esperar;
 import static Principal_Main.Main.meterEspacios;
@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author Juan José Estévez González
  */
 
-public class T_09 {
+public class T_02 {
     
     public static void main(String[] args)  {
         
@@ -22,18 +22,17 @@ public class T_09 {
         *******************************************************************************************
         *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.                                                 *
         *******************************************************************************************
-        *   TEMA 9:        PROTOCOLOS A NIVEL DE APLICACIÓN.                                      *
+        *   TEMA 2:                        PROCESOS.                                              *
         *******************************************************************************************
         *                                                                                         *
-        *  1. INTRODUCCIÓN A LOS SERVICIOS EN RED.                                                *
-        *  2. PROTOCOLOS A NIVEL DE APLICACIÓN.                                                   *
-        *  3. EL PROTOCOLO DNS.          -->  RESOLUCIÓN DE NOMBRES DE DOMINIO.                   *
-        *  4. EL PROTOCOLO FTP.          -->  PARA TRANSFERENCIA DE FICHEROS.                     *
-        *  5. EL PROTOCOLO SMTP.         -->  PARA EL CORREO.                                     *
-        *      - LOS PROT. POP3 E IMAP.  -->  DIFERENTES FORMAS DE CONECTARNOS A LOS MENSAJES.    *
-        *  6. EL PROTOCOLO HTTP.         -->  PARA LA NAVEGACIÓN POR INTERNET.                    *
-        *  7. CONEXIÓN - COMUNICACIÓN - DESCONEXIÓN.                                              *
-        *  8. COMANDOS HABITUALES.                                                                *
+        *  1. INTRODUCCIÓN A LOS PROCESOS.                                                        *
+        *  2. TIPOS DE PROCESO SEGÚN EL MODO Y ORIGEN DE EJECUCIÓN.                               *
+        *  3. ESTADOS DE UN PROCESO.                                                              *
+        *  4. GESTIÓN DE PROCESOS. EL SISTEMA OPERATIVO, RESPONSABLE PRINCIPAL.                   *
+        *  5. GESTIÓN DE PROCESOS. GESTIÓN DE LA EJECUCIÓN CONCURRENTE MEDIANTE 'COLAS'.          *                               
+        *  6. PLANIFICACIÓN DE PROCESOS I:  TIPOS.                                                *
+        *  7. PLANIFICACIÓN DE PROCESOS II: ALGORITMOS DE PLANIFICACIÓN.                          *
+        *  8. CAMBIOS DE CONTEXTO.                                                                *
         *                                                                                         *
         *******************************************************************************************
         *  0. SALIR.                                                                              *
@@ -46,7 +45,7 @@ public class T_09 {
                 meterEspacios(25);
                 switch (menu) {
                     
-                    case "1", "2", "3", "4", "5", "6", "7", "8" -> Recursos_09.recurso(menu);
+                    case "1", "2", "3", "4", "5", "6", "7", "8" -> Recursos_02.recurso(menu);
                    
                     case "0" -> {}
                     default -> {

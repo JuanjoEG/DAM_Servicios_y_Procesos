@@ -24,7 +24,7 @@ public class Productor_02 extends Thread {
     public void run() {        
             
         for (int i = 0; i < 10; i++) {
-            almacen.put();
+            almacen.put_02();
             System.out.println("Turno: " + i + " Productor  pone Una. En Almacen hay:" + almacen.contenido);
             try {
                 sleep(dormir);

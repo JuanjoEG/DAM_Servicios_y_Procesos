@@ -1,4 +1,4 @@
-package Principal;
+package Principal_Main;
 
 import java.util.Scanner;
 
@@ -14,6 +14,7 @@ public class Main {
         String menu="";
         do {
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
+            meterEspacios(25);
             System.out.println("""                          
                                
         **************************************************************
@@ -44,7 +45,18 @@ public class Main {
             try {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
+                meterEspacios(25);
                 switch (menu) {
+                    
+                    case "1" -> Tema_01.T_01.main(args);
+                    case "2" -> Tema_02.T_02.main(args);
+                    case "3" -> Tema_03.T_03.main(args);
+                    case "4" -> Tema_04.T_04.main(args);
+                    case "5" -> Tema_05.T_05.main(args);
+                    case "6" -> Tema_06.T_06.main(args);
+                    case "7" -> Tema_07.T_07.main(args);
+                    
+                    case "9" -> Tema_09.T_09.main(args);
                    
                     case "0" -> {}
                     default -> {

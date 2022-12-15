@@ -52,5 +52,6 @@ public class Sumador {
             System.out.println("Erroe: " + e);
         }
         System.out.println("\nProceso HIJO -> El resultado de la suma de todos los números del " + numero1 + " al " + numero2 + " es " + suma);
+        System.out.println("\nProceso HIJO -> Podras encontrar también el resultado en: " + ruta_sumador);
     }
 }

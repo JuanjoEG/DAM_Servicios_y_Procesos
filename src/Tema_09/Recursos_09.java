@@ -1,7 +1,7 @@
 package Tema_09;
 
-import static Principal.Main.esperar;
-import static Principal.Main.meterEspacios;
+import static Principal_Main.Main.esperar;
+import static Principal_Main.Main.meterEspacios;
 import java.util.Scanner;
 
 /**
@@ -9,9 +9,9 @@ import java.util.Scanner;
  * @author Juan José Estévez González
  */
 
-public class Recursos {
+public class Recursos_09 {
     
-    private static String intro = """                          
+    private static String recurso_01 = """                          
                                
         ************************************************************************************************************************
         *                                 INTRODUCCIÓN A LOS SERVICIOS EN RED.                                                 *
@@ -47,7 +47,7 @@ public class Recursos {
                                
                                """;
     
-    private static String proto = """                          
+    private static String recurso_02 = """                          
                                
         ************************************************************************************************************************
         *                                     PROTOCOLOS A NIVEL DE APLICACIÓN.                                                *
@@ -103,7 +103,7 @@ public class Recursos {
                                
                                """;
     
-    private static String dns = """                          
+    private static String recurso_03 = """                          
                                
         ************************************************************************************************************************
         *                                            EL PROTOCOLO DNS.    DOMAIN NAME SYSTEM.                                  *
@@ -142,7 +142,7 @@ public class Recursos {
         ************************************************************************************************************************
                                
                                """;
-    private static String ftp =  """                          
+    private static String recurso_04 =  """                          
                                
         ************************************************************************************************************************
         *                                     EL PROTOCOLO FTP. FILE TRANSFER PROTOCOL.                                        *
@@ -184,10 +184,10 @@ public class Recursos {
         ************************************************************************************************************************
                                
                                """;
-    private static String smtp = """                          
+    private static String recurso_05 = """                          
                                
         ************************************************************************************************************************
-        *                               EL PROTOCOLO SMTP. SIMPLE MAIL TRANSFER PROTOCOL.                                      *
+        *                EL PROTOCOLO SMTP. SIMPLE MAIL TRANSFER PROTOCOL. Y LOS PROTOCOLOS POP3 E IMAP.                       *
         ************************************************************************************************************************
         *   EL CORREO ELECTRÓNICO PERMITE ENVIAR Y RECIBIR MENSAJES CON O SIN ARCHIVOS ADJUNTOS DE FORMA RÁPIDA.               *
         *   ES EL PROTOCOLO SMPT ES EL QUE POSIBILITA ESTA FUNCIONALIDAD.                                                      *
@@ -219,7 +219,7 @@ public class Recursos {
         ************************************************************************************************************************
                                
                                """;
-    private static String http = """                          
+    private static String recurso_06 = """                          
                                
         ************************************************************************************************************************
         *                                 EL PROTOCOLO HTTP.  HIPERTEXT TRANSFER PROTOCOL                                      *
@@ -259,7 +259,7 @@ public class Recursos {
         ************************************************************************************************************************
                                
                                """;
-    private static String comunic = """                          
+    private static String recurso_07 = """                          
                                
         ************************************************************************************************************************
         *                                 CONEXIÓN - COMUNICACIÓN - DESCONEXIÓN.                                               *
@@ -291,7 +291,7 @@ public class Recursos {
                                
                                """;
     
-    private static String comandos = """                          
+    private static String recurso_08 = """                          
                                
         ************************************************************************************************************************
         *                                        COMANDOS HABITUALES.                                                          *
@@ -314,14 +314,14 @@ public class Recursos {
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
             
             switch (opcion) {                
-                case "1" -> System.out.println(intro);
-                case "2" -> System.out.println(proto);
-                case "3" -> System.out.println(dns);
-                case "4" -> System.out.println(ftp);
-                case "5" -> System.out.println(smtp);
-                case "6" -> System.out.println(http); 
-                case "7" -> System.out.println(comunic);
-                case "8" -> System.out.println(comandos);
+                case "1" -> System.out.println(recurso_01);
+                case "2" -> System.out.println(recurso_02);
+                case "3" -> System.out.println(recurso_03);
+                case "4" -> System.out.println(recurso_04);
+                case "5" -> System.out.println(recurso_05);                
+                case "6" -> System.out.println(recurso_06); 
+                case "7" -> System.out.println(recurso_07);
+                case "8" -> System.out.println(recurso_08);
             }
             try {
                 System.out.print("Seleccione una opción: ");

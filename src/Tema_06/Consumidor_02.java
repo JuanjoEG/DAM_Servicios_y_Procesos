@@ -26,10 +26,11 @@ public class Consumidor_02 extends Thread
         this.dormir = dormir;
     }
     
+    @Override
     public void run() {        
         
         for (int i = 0; i < 10; i++) {
-            almacen.get();
+            almacen.get_02();
             System.out.println("Turno: " + i + " Consumidor toma Una. En Almacen hay:" + almacen.contenido);
             try {
                 sleep(dormir);
