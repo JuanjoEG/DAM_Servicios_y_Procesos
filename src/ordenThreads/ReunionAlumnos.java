@@ -1,22 +1,20 @@
 package ordenThreads;
 
 /**
- * Ejemplo sencillo para ilustrar diferentes resultados de ejecucion.
- * @author oscar
+ *
+ * @author Juan José Estévez González
  */
-public class ReunionAlumnos_Join {
-    public static void main(String args[]) throws InterruptedException{
-
+public class ReunionAlumnos {
+    
+    public static void main(String args[]) throws InterruptedException{      
+        
         Thread juan = new Thread (new Alumno("Juan"));
         Thread luis = new Thread (new Alumno("Luis"));
         Thread rosa = new Thread (new Alumno("Rosa"));
 
         juan.start();
-        juan.join();
         luis.start();
-        luis.join();
         rosa.start();
-        rosa.join();
     }  
 }
 /**
@@ -34,6 +32,6 @@ class Alumno implements Runnable{
         for (int i=1; i<6;i++){
             String msj = mensaje + i;
             System.out.println(msj);
-        }    
+        }
     }
 }
