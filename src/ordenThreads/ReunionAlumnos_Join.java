@@ -4,7 +4,7 @@ package ordenThreads;
  * Ejemplo sencillo para ilustrar diferentes resultados de ejecucion.
  * @author oscar
  */
-public class reunionAlumnosJoin {
+public class ReunionAlumnos_Join {
     public static void main(String args[]) throws InterruptedException{
 
         Thread juan = new Thread (new Alumno("Juan"));

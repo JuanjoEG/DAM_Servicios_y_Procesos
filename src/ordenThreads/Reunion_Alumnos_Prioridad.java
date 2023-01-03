@@ -5,7 +5,7 @@ package ordenThreads;
  * Ejemplo sencillo para ilustrar diferentes resultados de ejecucion.
  * @author oscar
  */
-public class reunionAlumnosPrioridad {
+public class Reunion_Alumnos_Prioridad {
     public static void main(String args[]) throws InterruptedException{
  
         

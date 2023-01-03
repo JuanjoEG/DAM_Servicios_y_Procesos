@@ -1,4 +1,4 @@
-package Tema_06;
+package Tema_10;
 
 import static Principal_Main.Main.esperar;
 import static Principal_Main.Main.meterEspacios;
@@ -8,21 +8,20 @@ import java.util.Scanner;
  *
  * @author Juan José Estévez González
  */
-
-public class T_06 {
+public class T_10 {
     
-    public static String punto_01 ="*  PUNTO  1.  PROBLEMAS ASOCIADOS A LA SINCRONIZACIÓN.\n";
-    public static String punto_02 ="*  PUNTO  2.  HERRAMIENTAS PARA SINCRONIZACIÓN: MONITORES.\n";
-    public static String punto_03 ="*  PUNTO  3.  PROBLEMA DEL PRODUCTOR-CONSUMIDOR.\n";
-    public static String punto_04 ="*  PUNTO  4.  SOLUCIÓN DEL PROBLEMA DEL PRODUCTOR-CONSUMIDOR. MONITORES.\n";
-    public static String punto_05 ="*  PUNTO  5.  HERRAMIENTAS PARA SINCRONIZACIÓN: SEMÁFOROS.\n";
-    public static String punto_06 ="*  PUNTO  6.  EL PROBLEMA DE LOS FUMADORES.\n";
-    public static String punto_07 ="*  PUNTO  7.  EL PROBLEMA DE LOS FILÓSOFOS.\n";
-    public static String punto_08 ="*  PUNTO  8.  EL PROBLEMA DEL BARBERO.\n";
-    public static String punto_09 ="*  PUNTO  9.  EJEMPLO 1 PRODUCTOR-CONSUMIDOR. SIN MONITORES.\n";
-    public static String punto_10 ="*  PUNTO 10.  EJEMPLO 1 PRODUCTOR-CONSUMIDOR. CON MONITORES.\n";
-    public static String punto_11 ="*  PUNTO 11.  EJEMPLO 2 PRODUCTOR-CONSUMIDOR. SIN MONITORES.\n";
-    public static String punto_12 ="*  PUNTO 12.  EJEMPLO 2 PRODUCTOR-CONSUMIDOR. CON MONITORES.\n";
+    public static String punto_01 ="*  PUNTO  1.  DEFINICIÓN DE SOCKETS.\n";
+    public static String punto_02 ="*  PUNTO  2.  PROGRAMACIÓN DE UN SERVIDOR TCP.\n";
+    public static String punto_03 ="*  PUNTO  3.  CÓDIGO DE UN SERVIDOR TCP SIMPLE.\n";
+    public static String punto_04 ="*  PUNTO  4.  PROGRAMACIÓN DE UN CLIENTE TCP.\n";
+    public static String punto_05 ="*  PUNTO  5.  CÓDIGO DE UN CLIENTE TCP SIMPLE.\n";
+    public static String punto_06 ="*  PUNTO  6.  CAPTURAR EL TRÁFICO TCP CON WIRESCHARK.\n";
+    public static String punto_07 ="*  PUNTO  7.  CLASES DATAGRAMPACKET Y DATAGRAMSOCKET.\n";
+    public static String punto_08 ="*  PUNTO  8.  PROGRAMACIÓN DE UN SERVIDOR UDP.\n";
+    public static String punto_09 ="*  PUNTO  9.  CÓDIGO DE UN SERVIDOR UDP SIMPLE.\n";
+    public static String punto_10 ="*  PUNTO 10.  PROGRAMACIÓN DE UN CLIENTE UDP.\n";
+    public static String punto_11 ="*  PUNTO 11.  CÓDIGO DE UN CLIENTE UDP SIMPLE.\n";
+    public static String punto_12 ="*  PUNTO 12.  CAPTURAR EL TRÁFICO UDP CON WIRESCHARK.\n";
     
     public static void main(String[] args)  {
         
@@ -35,43 +34,40 @@ public class T_06 {
         *******************************************************************************************
         """ + Principal_Main.Main.asignatura + """
         *******************************************************************************************
-        """ + Principal_Main.Main.tema_06 + """
+        """ + Principal_Main.Main.tema_10 + """
         *******************************************************************************************
         *
-        """ + punto_01 + """                        
+        """ + punto_01 + """
+        *
         """ + punto_02 + """
         """ + punto_03 + """                        
         """ + punto_04 + """
-        """ + punto_05 + """                        
-        """ + punto_06 + """
-        """ + punto_07 + """                        
-        """ + punto_08 + """
+        """ + punto_05 + """
         *
+        """ + punto_06 + """
+        """ + punto_07 + """
+        *
+        """ + punto_08 + """
         """ + punto_09 + """                        
         """ + punto_10 + """
-        *
         """ + punto_11 + """
-        """ + punto_12 + """
+        *
+        """ + punto_12 + """ 
         *
         *******************************************************************************************
         *  0. SALIR.
         *******************************************************************************************
                                
                                """);
+                               
             try {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
                 meterEspacios(25);
                 switch (menu) {
                     
-                    case "1", "2", "3", "4", "5", "6", "7", "8" -> Recursos_06.recurso(menu);
+                    case "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" -> Recursos_10.recurso(menu); 
                     
-                    case "9" -> ProblemaProductorConsumidor_01.main(args);
-                    case "10" -> ProblemaProductorConsumidor_02.main(args);
-                    
-                    case "11" -> ProblemaProductorConsumidor_03.main(args);
-                    case "12" -> ProblemaProductorConsumidor_04.main(args);
-                   
                     case "0" -> {}
                     default -> {
                             meterEspacios(25);
@@ -86,5 +82,5 @@ public class T_06 {
                 System.out.println("La Excepción es: " + e.getClass());
             }
         } while (!"0".equals(menu));
-    }    
+    }
 }

@@ -11,6 +11,15 @@ import java.util.Scanner;
 
 public class T_09 {
     
+    public static String punto_01 ="*  PUNTO  1.  INTRODUCCIÓN A LOS SERVICIOS EN RED.\n";
+    public static String punto_02 ="*  PUNTO  2.  PROTOCOLOS A NIVEL DE APLICACIÓN.\n";
+    public static String punto_03 ="*  PUNTO  3.  EL PROTOCOLO DNS.          -->  RESOLUCIÓN DE NOMBRES DE DOMINIO.\n";
+    public static String punto_04 ="*  PUNTO  4.  EL PROTOCOLO FTP.          -->  PARA TRANSFERENCIA DE FICHEROS.\n";
+    public static String punto_05 ="*  PUNTO  5.  EL PROTOCOLO SMTP.         -->  PARA EL CORREO.\n*              - LOS PROT. POP3 E IMAP.  -->  DIFERENTES FORMAS DE CONECTARNOS A LOS MENSAJES.\n";
+    public static String punto_06 ="*  PUNTO  6.  EL PROTOCOLO HTTP.         -->  PARA LA NAVEGACIÓN POR INTERNET.\n";
+    public static String punto_07 ="*  PUNTO  7.  CONEXIÓN - COMUNICACIÓN - DESCONEXIÓN.\n";
+    public static String punto_08 ="*  PUNTO  8.  COMANDOS HABITUALES.\n";
+    
     public static void main(String[] args)  {
         
         String menu="";
@@ -20,23 +29,22 @@ public class T_09 {
             System.out.println("""                          
                                
         *******************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.                                                 *
+        """ + Principal_Main.Main.asignatura + """
         *******************************************************************************************
-        *   TEMA 9:        PROTOCOLOS A NIVEL DE APLICACIÓN.                                      *
+        """ + Principal_Main.Main.tema_09 + """
         *******************************************************************************************
-        *                                                                                         *
-        *  1. INTRODUCCIÓN A LOS SERVICIOS EN RED.                                                *
-        *  2. PROTOCOLOS A NIVEL DE APLICACIÓN.                                                   *
-        *  3. EL PROTOCOLO DNS.          -->  RESOLUCIÓN DE NOMBRES DE DOMINIO.                   *
-        *  4. EL PROTOCOLO FTP.          -->  PARA TRANSFERENCIA DE FICHEROS.                     *
-        *  5. EL PROTOCOLO SMTP.         -->  PARA EL CORREO.                                     *
-        *      - LOS PROT. POP3 E IMAP.  -->  DIFERENTES FORMAS DE CONECTARNOS A LOS MENSAJES.    *
-        *  6. EL PROTOCOLO HTTP.         -->  PARA LA NAVEGACIÓN POR INTERNET.                    *
-        *  7. CONEXIÓN - COMUNICACIÓN - DESCONEXIÓN.                                              *
-        *  8. COMANDOS HABITUALES.                                                                *
-        *                                                                                         *
+        *
+        """ + punto_01 + """                        
+        """ + punto_02 + """
+        """ + punto_03 + """                        
+        """ + punto_04 + """
+        """ + punto_05 + """                        
+        """ + punto_06 + """
+        """ + punto_07 + """                        
+        """ + punto_08 + """
+        *
         *******************************************************************************************
-        *  0. SALIR.                                                                              *
+        *  0. SALIR.
         *******************************************************************************************
                                
                                """);
@@ -62,6 +70,5 @@ public class T_09 {
                 System.out.println("La Excepción es: " + e.getClass());
             }
         } while (!"0".equals(menu));
-    }
-    
+    }    
 }

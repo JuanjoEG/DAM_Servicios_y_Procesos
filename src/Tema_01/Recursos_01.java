@@ -2,6 +2,7 @@ package Tema_01;
 
 import static Principal_Main.Main.esperar;
 import static Principal_Main.Main.meterEspacios;
+import static Tema_01.T_01.*;
 import java.util.Scanner;
 
 /**
@@ -11,12 +12,15 @@ import java.util.Scanner;
 
 public class Recursos_01 {
     
+    private static String titulo = Principal_Main.Main.asignatura + Principal_Main.Main.tema_01 ;
+    
     private static String recurso_01 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 1:   TIPOS DE PROGRAMACIÓN.                                  *
+        """ + titulo + """
         ************************************************************************************************************************
-                                  CONCEPTOS BÁSICOS I. PROGRAMA, PROCESO, SERVICIO.
+        """ + punto_01 + """
+        ************************************************************************************************************************
                                        
             - PROGRAMA:
                     - INFORMACIÓN, TANTO DE CÓDIGO COMO DE DATOS, ALMACENADA EN DISCO DE UNA APLICACIÓN
@@ -42,7 +46,7 @@ public class Recursos_01 {
                     - UN PROCESO PUEDE TENER UNO O VARIOS SERVICIOS.
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -50,9 +54,10 @@ public class Recursos_01 {
     private static String recurso_02 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 1:   TIPOS DE PROGRAMACIÓN.                                  *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                  CONCEPTOS BÁSICOS II. HILOS Y EJECUTABLE.
+        """ + punto_02 + """
+        ************************************************************************************************************************
 
             - HILOS: (HEBRA O THREAD)
                     - ES CADA UNA DE LAS TAREAS QUE PODEMOS EJECUTAR EN PARALELO A OTRAS TAREAS.
@@ -84,7 +89,7 @@ public class Recursos_01 {
                     - PERMITE PONER EL PROGRAMA EN EJECUCIÓN COMO UN PROCESO.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -92,9 +97,10 @@ public class Recursos_01 {
     private static String recurso_03 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 1:   TIPOS DE PROGRAMACIÓN.                                  *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                  PROGRAMACIÓN CONCURRENTE.
+        """ + punto_03 + """
+        ************************************************************************************************************************
 
             - PROGRAMACIÓN CONCURRENTE:
                     - PROGRAMACIÓN PARA EJECUTAR AL MISMO TIEMPO VARIAS TAREAS INTERACTIVAS.
@@ -129,9 +135,10 @@ public class Recursos_01 {
     private static String recurso_04 =  """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 1:   TIPOS DE PROGRAMACIÓN.                                  *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                  PROGRAMACIÓN PARALELA.   MULTIHILO, MULTIHEBRA O MULTITHREADING.
+        """ + punto_04 + """
+        ************************************************************************************************************************
 
             - PROGRAMACIÓN PARALELA:
                     - ES UN TIPO ESPECIAL DE PROGRAMACIÓN CONCURRENTE PORQUE PERSIGUE EJECUTAR VARIAS TAREAS AL MISMO TIEMPO.
@@ -164,9 +171,10 @@ public class Recursos_01 {
     private static String recurso_05 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 1:   TIPOS DE PROGRAMACIÓN.                                  *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                            PROGRAMACIÓN DISTRIBUIDA. (EN VARIOS EQUIPOS).
+        """ + punto_05 + """
+        ************************************************************************************************************************
 
             - SISTEMAS DISTRIBUIDOS:
                     - CONJUNTO DE ORDENADORES INTERCONECTADOS, COMPARTIENDO UN MISMO ESTADO 
@@ -199,8 +207,6 @@ public class Recursos_01 {
         ************************************************************************************************************************
                                
                                """;
-    
-    
     
     public static void recurso(String opcion) {
         

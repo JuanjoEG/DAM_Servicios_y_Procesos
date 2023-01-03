@@ -1,8 +1,8 @@
 package Tema_02;
 
-import Tema_01.*;
 import static Principal_Main.Main.esperar;
 import static Principal_Main.Main.meterEspacios;
+import static Tema_02.T_02.*;
 import java.util.Scanner;
 
 /**
@@ -12,12 +12,15 @@ import java.util.Scanner;
 
 public class Recursos_02 {
     
+    private static String titulo = Principal_Main.Main.asignatura + Principal_Main.Main.tema_02 ;
+    
     private static String recurso_01 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 2:   PROCESOS.                                               *
+        """ + titulo + """
         ************************************************************************************************************************
-                                  INTRODUCCIÓN A LOS PROCESOS.
+        """ + punto_01 + """
+        ************************************************************************************************************************
                                        
             - PROCESO:
                     - PROGRAMA EN EJECUCIÓN.
@@ -38,7 +41,7 @@ public class Recursos_02 {
                     - LAS TAREAS SE EJECUTAN UNA TRAS OTRA HASTA EL FINAL, O POCO A POCO CADA TAREA.                                       
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -46,9 +49,10 @@ public class Recursos_02 {
     private static String recurso_02 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 2:   PROCESOS.                                               *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                  TIPOS DE PROCESO SEGÚN EL MODO Y ORIGEN DE EJECUCIÓN.
+        """ + punto_02 + """
+        ************************************************************************************************************************
 
             - SI NOS FIJAMOS EN EL MODO DE EJECUCIÓN DE LOS PROCESOS,
               Y SI NECESITAN O NO DEL USUARIO, LOS PODEMOS DIFERENCIAR EN:
@@ -87,9 +91,10 @@ public class Recursos_02 {
     private static String recurso_03 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 2:   PROCESOS.                                               *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                  ESTADOS DE UN PROCESO.
+        """ + punto_03 + """
+        ************************************************************************************************************************
 
             - EN EL SISTEMA HABRÁ UN PLANIFICADOR (SCHEDULER) QUE CREA Y PONE EN EJECUCIÓN LOS PROCESOS.
                                        
@@ -124,7 +129,7 @@ public class Recursos_02 {
                               ESPERANDO QUE EL SISTEMA OPERATIVO LO DESTRUYA.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -132,9 +137,10 @@ public class Recursos_02 {
     private static String recurso_04 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 2:   PROCESOS.                                               *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                  GESTIÓN DE PROCESOS.   EL SISTEMA OPERATIVO, RESPONSABLE PRINCIPAL.
+        """ + punto_04 + """
+        ************************************************************************************************************************
 
             - EL ENCARGADO PRINCIPAL DE TODA LA GESTIÓN DE PROCESOS ES EL SISTEMA OPERATIVO,
               NORMALMENTE SIGUIENDO INSTRUCCIONES DE UN USUARIO:
@@ -159,16 +165,17 @@ public class Recursos_02 {
                     4. TAMBIÉN SE ENCARGA DE LA ELIMINACIÓN Y TERMINACIÓN DE ÉSTOS PROCESOS.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_05 =  """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 2:   PROCESOS.                                               *
+        """ + titulo + """  
         ************************************************************************************************************************
-                       GESTIÓN DE PROCESOS. GESTIÓN DE LA EJECUCIÓN CONCURRENTE MEDIANTE 'COLAS'.
+        """ + punto_05 + """
+        ************************************************************************************************************************
 
             - LOS SISTEMAS OPERATIVOS ACTUALES PERMITEN LA MULTIPROGRAMACIÓN:
               ADMITEN LA EJECUCIÓN DE VARIOS PROCESOS EN MEMORIA PARA MAXIMIZAR EL USO DEL PROCESADOR.
@@ -189,16 +196,17 @@ public class Recursos_02 {
                             - HABRÁ UNA COLA POR CADA DISPOSITIVO DE ENTRADA/SALIDA.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_06 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 2:   PROCESOS.                                               *
+        """ + titulo + """  
         ************************************************************************************************************************
-                         PLANIFICACIÓN DE PROCESOS I:  TIPOS.         
+        """ + punto_06 + """
+        ************************************************************************************************************************   
 
             - EL PLANIFICADOR DE PROCESOS (SCHEDULER):
                     - DECIDE Y SELECCIONA, MEDIANTE UN ALGORITMO, LOS PROCESOS QUE VAN A EJECUTARSE EN EL PROCESADOR,
@@ -236,16 +244,17 @@ public class Recursos_02 {
                     - NO DEJAR A NINGÚN PROCESO SIN EJECUTARSE.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_07 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 2:   PROCESOS.                                               *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                PLANIFICACIÓN DE PROCESOS II: ALGORITMOS DE PLANIFICACIÓN.
+        """ + punto_07 + """
+        ************************************************************************************************************************
 
             - PRIMERO EN LLEGAR (FCFS O FIFO):
                     - LOS PROCESOS SE VAN EJECUTANDO SEGÚN SE CEEN, SIN NINGÚN OTRO CRITERIO.
@@ -274,16 +283,17 @@ public class Recursos_02 {
                     - ESTE TIPO DE PLANIFICADOR ES UNA MEZCLA DE TODOS LOS ANTERIORES.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_08 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 2:   PROCESOS.                                               *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                  CAMBIOS DE CONTEXTO.
+        """ + punto_08 + """
+        ************************************************************************************************************************
 
             - CAMBIO DE CONTEXTO:
                     - EL SISTEMA OPERATIVO GUARDA DATOS DE SITUACIÓN DEL PROCESO QUE SALE DEL ESTADO 'EJECUTÁNDOSE',
@@ -320,7 +330,7 @@ public class Recursos_02 {
               EL PROCESADOR NO HACE UN TRABAJO ÚTIL DURANTE ESE TIEMPO, NO PROCESA INSTRUCCIONES.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;

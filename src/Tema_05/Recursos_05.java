@@ -2,6 +2,7 @@ package Tema_05;
 
 import static Principal_Main.Main.esperar;
 import static Principal_Main.Main.meterEspacios;
+import static Tema_05.T_05.*;
 import java.util.Scanner;
 
 /**
@@ -11,12 +12,15 @@ import java.util.Scanner;
 
 public class Recursos_05 {
     
+    private static String titulo = Principal_Main.Main.asignatura + Principal_Main.Main.tema_05 ;
+    
     private static String recurso_01 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 5:                         GESTIÓN DE HILOS.                      *
+        """ + titulo + """
         ************************************************************************************************************************
-                                           CREACIÓN DE HILOS. USANDO THREAD.
+        """ + punto_01 + """
+        ************************************************************************************************************************
                                        
             - EN EL LENGUAJE DE PROGRAMACIÍN JAVA, UN HILO SERÁ CREADO MEDIANTE UNA INSTANCIA DE LA CLASE Thread,
               QUE NOS PERMITIRÁ GESTIONAR COMPLETAMENTE NUESTROS HILOS.
@@ -40,7 +44,7 @@ public class Recursos_05 {
             INTERFACES QUE NECESITEMOS.
                                       
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -48,9 +52,10 @@ public class Recursos_05 {
     private static String recurso_02 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 5:                         GESTIÓN DE HILOS.                      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                           CREACIÓN DE HILOS. USANDO RUNNABLE.              
+        """ + punto_02 + """
+        ************************************************************************************************************************              
                                        
             - JAVA TAMBIÉN PERMITE CREAR HILOS IMPLEMENTANDO LA INTERFAZ RUNABLE.
             - EN ESTE CASO, LOS PASOS QUE HAY QUE DAR SON:
@@ -75,7 +80,7 @@ public class Recursos_05 {
             INTERFACES QUE NECESITEMOS.
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -83,9 +88,10 @@ public class Recursos_05 {
     private static String recurso_03 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 5:                         GESTIÓN DE HILOS.                      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                             INICIALIZACIÓN Y EJECUCIÓN DE HILOS.
+        """ + punto_03 + """
+        ************************************************************************************************************************
                                        
             - SI CREAMOS UN OBJETO DE UNA CLASE CON FUNCIONALIDAD DE HILO MEDIANTE HERENCIA DE THREAD: 
               NO LLEGA CON CREAR EL OBJETO CON new(); PARA QUE EL HILO SE EJECUTE Y PASE A SEGUNDO PLANO, 
@@ -105,16 +111,17 @@ public class Recursos_05 {
             EN CASO DE HACERLO, TENDRIAMOS UNA EXCEPCIÓN DEL TIPO   --->    IllegalThreadStateException.
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_04 =  """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 5:                         GESTIÓN DE HILOS.                      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                            SUSPENSIÓN Y FINALIZACIÓN DE HILOS.
+        """ + punto_04 + """
+        ************************************************************************************************************************
                                         
             - CUANDO ESTAMOS TRABAJANDO CON HILOS, A VECES NECESITAMOS DE UN BUCLE INFITO 
               PARA QUE LA HEBRA SE EJECUTE CONSTANTEMENTE EN SEGUNDO PLANO.
@@ -147,16 +154,17 @@ public class Recursos_05 {
                               DE INTERBLOQUEO DE HILOS Y HACER QUE NUESTRA APLICACIÓN SE BLOQUEE SIN POSIBILIDAD DE ARREGLO.                                        
                                         
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_05 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 5:                         GESTIÓN DE HILOS.                      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                      PLANIFICACIÓN DE HILOS. join(): ESPERAR A LA FINALIZACIÓN DE UN HILO.
+        """ + punto_05 + """
+        ************************************************************************************************************************
                                        
             - CUANDO TENEMOS VARIOS HILOS EJECUTÁNDOSE EN SEGUNDO PLANO, NO CONTROLAMOS CUÁL DE ELLOS SE EJECUTARÁ:
               ES EL PROPIO PLANIFICADOR DEL SISTEMA OPERATIVO ES QUIEN LO DECIDE.
@@ -181,16 +189,17 @@ public class Recursos_05 {
                       ANTERIORES, NO HABRÁ FORMA DE QUE ESE CÓDIGO SE EJECUTE.   
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_06 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 5:                         GESTIÓN DE HILOS.                      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                                 PRIORIDAD EN LOS HILOS.
+        """ + punto_06 + """
+        ************************************************************************************************************************
                                        
             - OTRA FORMA DE INFLUIR EN EL ORDEN DE LA EJECUCIÓN DE LOS HILOS, ES ESTABLECIENDO PRIORIDADES.
               EN JAVA, LA CLASE THREAD USA TRES CONSTANTES PARA LOS NIVELES DE PRIORIDAD RELATIVOS A LOS HILOS:
@@ -219,24 +228,10 @@ public class Recursos_05 {
                       PUEDE QUE VUELVA A SER SELECCIONADO PARA EJECUTARSE INMEDIATAMENTE, Y EL yield() NO TENGA EFECTO.
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
-    private static String recurso_07 = """                          
-                               
-        ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 5:                         GESTIÓN DE HILOS.                      *
-        ************************************************************************************************************************
-
-
-        ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
-        ************************************************************************************************************************
-                               
-                               """;
-    
-    
     
     public static void recurso(String opcion) {
         
@@ -251,7 +246,6 @@ public class Recursos_05 {
                 case "4" -> System.out.println(recurso_04);
                 case "5" -> System.out.println(recurso_05); 
                 case "6" -> System.out.println(recurso_06);
-               // case "7" -> System.out.println(recurso_07);
             }
             try {
                 System.out.print("Seleccione una opción: ");

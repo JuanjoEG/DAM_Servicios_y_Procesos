@@ -2,6 +2,7 @@ package Tema_03;
 
 import static Principal_Main.Main.esperar;
 import static Principal_Main.Main.meterEspacios;
+import static Tema_03.T_03.*;
 import java.util.Scanner;
 
 /**
@@ -11,12 +12,15 @@ import java.util.Scanner;
 
 public class Recursos_03 {
     
+    private static String titulo = Principal_Main.Main.asignatura + Principal_Main.Main.tema_03 ;
+    
     private static String recurso_01 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 3:   GESTIÓN DE PROCESOS.                                    *
+        """ + titulo + """
         ************************************************************************************************************************
-                                  CREACIÓN DE PROCESOS EN JAVA: EJECUCIÓN DE COMANDOS DEL SISTEMA OPERATIVO.
+        """ + punto_01 + """
+        ************************************************************************************************************************
                                        
             - PARA CREAR PROCESOS EN JAVA, VAMOS A UTILIZAR LA CLASE   --->   Process
               QUE NOS OFRECE LOS MÉTODOS                               --->   ProcessBuilder.start()   Y   Runtime.exec()
@@ -47,7 +51,7 @@ public class Recursos_03 {
                     - EL PROCESO HIJO QUE CREA SERÁ TOTALMENTE INDEPENDIENTE AL PROCESO PADRE.
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -55,9 +59,10 @@ public class Recursos_03 {
     private static String recurso_02 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 3:   GESTIÓN DE PROCESOS.                                    *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                  CREACIÓN DE PROCESOS EN JAVA: EJECUCIÓN DE UNA CLASE EN UN PROCESO.
+        """ + punto_02 + """
+        ************************************************************************************************************************
 
             - USANDO ProcessBuilder, DESDE JAVA PODEMOS LANZAR,
               EN UN PROCESO INDEPENDIENTE, UN MÉTODO DE UNA CLASE CREADA POR NOSOTROS: PARA ELLO:
@@ -94,7 +99,7 @@ public class Recursos_03 {
                                                     - TENDRÁ TANTOS PARÁMETROS COMO PARÁMETROS TENGA LA CLASE A EJECUTAR.
        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -102,9 +107,10 @@ public class Recursos_03 {
     private static String recurso_03 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 3:   GESTIÓN DE PROCESOS.                                    *
+        """ + titulo + """  
         ************************************************************************************************************************
-                            ¿CÓMO CREAMOS EL MÉTODO ejecutarClaseProceso?
+        """ + punto_03 + """
+        ************************************************************************************************************************
 
             - CREACIÓN DEL PROCESO CON   --->   ProcessBuilder
                     - CON PARÁMETROS:
@@ -150,16 +156,17 @@ public class Recursos_03 {
       }
                                                  
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_04 =  """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 3:   GESTIÓN DE PROCESOS.                                    *
+        """ + titulo + """  
         ************************************************************************************************************************
-                    L A N Z A R     P R O C E S O     E N     E L     C M D .
+        """ + punto_04 + """
+        ************************************************************************************************************************
 
             EJECUTAR UN PROGRAMA PASO A PASO EN NetBeans:
             BOTÓN DERECHO SOBRE EL PROGRAMA -> PROPIEDADES -> RUN -> MAIN CLASS -> BROWSE... Y SELECCIONAMOS LA CLASE.
@@ -186,16 +193,17 @@ public class Recursos_03 {
             NOTA: EN EL CMD TRANSFORMAR LAS CONTRABARRAS DOBLES SI APARECIERAN, EN CONTRABARRAS SIMPLES.
                                         
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_05 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 3:   GESTIÓN DE PROCESOS.                                    *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                  TERMINAR UN PROCESO. EL MÉTODO destroy Y exit.
+        """ + punto_05 + """
+        ************************************************************************************************************************
 
             - EL MÉTODO destroy DE LA CLASE Process FINALIZA UN PROCESO HIJO QUE HAYA CREADO.
                                        
@@ -213,16 +221,17 @@ public class Recursos_03 {
                                  exit      --->   FORZAR LA FINALIZACIÓN.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_06 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 3:   GESTIÓN DE PROCESOS.                                    *
+        """ + titulo + """  
         ************************************************************************************************************************
-                       COMUNICACIÓN ENTRE PROCESOS. REDIRECCIONES NECESARIAS PARA COMUNICACIÓN ENTRE PROCESOS JAVA.
+        """ + punto_06 + """
+        ************************************************************************************************************************
 
             - LOS PROCESOS SON UN PROGRAMA EN EJECUCIÓN Y PUEDEN PEDIR Y LEER INFORMACIÓN, PROCESARLA Y MOSTRARLA POR PANTALLA.
               PARA ELLO TENEMOS:
@@ -272,16 +281,17 @@ public class Recursos_03 {
                       EL PADRE Y EL HIJO NO SE VEN, Y SOLO SE MOSTRARÍA LOS MENSAJES DEL PADRE.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_07 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.            TEMA 3:   GESTIÓN DE PROCESOS.                                    *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                  SINCRONIZACIÓN ENTRE PROCESOS.
+        """ + punto_07 + """
+        ************************************************************************************************************************
                                        
             - SI EN JAVA LANZAMOS MÁS DE UN PROCESO A LA VEZ,
               NO PODEMOS SABER QUÉ LÍNEA DE CÓDIGO ESTÁ EJECUTANDO CADA UNO.
@@ -311,7 +321,7 @@ public class Recursos_03 {
                       EN LA EJECUCIÓN DE DOS O MÁS PROCESOS.             
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;

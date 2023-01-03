@@ -1,6 +1,5 @@
 package Tema_01;
 
-import Tema_09.*;
 import static Principal_Main.Main.esperar;
 import static Principal_Main.Main.meterEspacios;
 import java.util.Scanner;
@@ -12,6 +11,12 @@ import java.util.Scanner;
 
 public class T_01 {
     
+    public static String punto_01 ="*  PUNTO  1.  CONCEPTOS BÁSICOS I. PROGRAMA, PROCESO, SERVICIO.\n";
+    public static String punto_02 ="*  PUNTO  2.  CONCEPTOS BÁSICOS II. HILOS Y EJECUTABLE.\n";
+    public static String punto_03 ="*  PUNTO  3.  PROGRAMACIÓN CONCURRENTE.\n";
+    public static String punto_04 ="*  PUNTO  4.  PROGRAMACIÓN PARALELA.\n";
+    public static String punto_05 ="*  PUNTO  5.  PROGRAMACIÓN DISTRIBUIDA.\n";
+    
     public static void main(String[] args)  {
         
         String menu="";
@@ -21,20 +26,20 @@ public class T_01 {
             System.out.println("""                          
                                
         *******************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.                                                 *
-        *******************************************************************************************
-        *   TEMA 1:                  TIPOS DE PROGRAMACIÓN.                                       *
-        *******************************************************************************************
-        *                                                                                         *
-        *  1. CONCEPTOS BÁSICOS I. PROGRAMA, PROCESO, SERVICIO.                                   *
-        *  2. CONCEPTOS BÁSICOS II. HILOS Y EJECUTABLE.                                           *
-        *  3. PROGRAMACIÓN CONCURRENTE.                                                           *
-        *  4. PROGRAMACIÓN PARALELA.                                                              *
-        *  5. PROGRAMACIÓN DISTRIBUIDA.                                                           *
-        *                                                                                         *
-        *******************************************************************************************
-        *  0. SALIR.                                                                              *
-        *******************************************************************************************
+                """ + Principal_Main.Main.asignatura + """
+                *******************************************************************************************
+                """ + Principal_Main.Main.tema_01 + """
+                *******************************************************************************************
+                *
+                """ + punto_01 + """         
+                """ + punto_02 + """
+                """ + punto_03 + """                        
+                """ + punto_04 + """
+                """ + punto_05 + """
+                *
+                *******************************************************************************************
+                *  0. SALIR.
+                *******************************************************************************************
                                
                                """);
             try {
@@ -59,6 +64,5 @@ public class T_01 {
                 System.out.println("La Excepción es: " + e.getClass());
             }
         } while (!"0".equals(menu));
-    }
-    
+    }    
 }

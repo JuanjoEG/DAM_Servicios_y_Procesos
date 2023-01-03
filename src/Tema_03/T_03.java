@@ -11,6 +11,17 @@ import java.util.Scanner;
 
 public class T_03 {
     
+    public static String punto_01 ="*  PUNTO  1.  CREACIÓN DE PROCESOS EN JAVA: EJECUCIÓN DE COMANDOS DEL SISTEMA OPERATIVO.\n";
+    public static String punto_02 ="*  PUNTO  2.  CREACIÓN DE PROCESOS EN JAVA: EJECUCIÓN DE UNA CLASE EN UN PROCESO.\n";
+    public static String punto_03 ="*  PUNTO  3.  CREACIÓN DEL PROCESO CON ProcessBuilder: CREACIÓNS EL MÉTODO ejecutarClaseProceso.\n";
+    public static String punto_04 ="*  PUNTO  4.  EJECUTAR UN PROGRAMA PASO A PASO EN NetBeans. LANZADOR DE PROCESOS EN EL CMD.\n";
+    public static String punto_05 ="*  PUNTO  5.  TERMINAR UN PROCESO. EL MÉTODO destroy Y exit.\n";
+    public static String punto_06 ="*  PUNTO  6.  COMUNICACIÓN ENTRE PROCESOS. REDIRECCIONES NECESARIAS PARA COMUNICACIÓN ENTRE PROCESOS JAVA.\n";
+    public static String punto_07 ="*  PUNTO  7.  SINCRONIZACIÓN ENTRE PROCESOS.\n";
+    public static String punto_08 ="*  PUNTO  8.  EJEMPLO LANZADOR DE COMANDOS DEL CMD. INVOCAR AL BASH DEL SISTEMA OPERATIVO.\n";
+    public static String punto_09 ="*  PUNTO  9.  EJEMPLO SUMADOR NÚMEROS.\n";
+    public static String punto_10 ="*  PUNTO 10.  EJEMPLO LANZADOR/DESTRUCTOR DEL PROCESO DEL BLOC DE NOTAS.\n";
+    
     public static void main(String[] args)  {
         
         String menu="";
@@ -19,27 +30,27 @@ public class T_03 {
             meterEspacios(25);
             System.out.println("""                          
                                
-        ****************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.                                                          *
-        ****************************************************************************************************
-        *   TEMA 3:                      GESTIÓN DE PROCESOS.                                              *
-        ****************************************************************************************************
-        *                                                                                                  *
-        *  1. CREACIÓN DE PROCESOS EN JAVA: EJECUCIÓN DE COMANDOS DEL SISTEMA OPERATIVO.                   *
-        *  2. CREACIÓN DE PROCESOS EN JAVA: EJECUCIÓN DE UNA CLASE EN UN PROCESO.                          *
-        *  3. CREACIÓN DEL PROCESO CON ProcessBuilder: CREACIÓNS EL MÉTODO ejecutarClaseProceso.           *
-        *  4. EJECUTAR UN PROGRAMA PASO A PASO EN NetBeans. LANZADOR DE PROCESOS EN EL CMD.                *
-        *  5. TERMINAR UN PROCESO. EL MÉTODO destroy Y exit.                                               *
-        *  6. COMUNICACIÓN ENTRE PROCESOS. REDIRECCIONES NECESARIAS PARA COMUNICACIÓN ENTRE PROCESOS JAVA. *                               
-        *  7. SINCRONIZACIÓN ENTRE PROCESOS.                                                               *
-        *                                                                                                  *
-        *  8. EJEMPLO LANZADOR DE COMANDOS DEL CMD. INVOCAR AL BASH DEL SISTEMA OPERATIVO.                 *
-        *  9. EJEMPLO SUMADOR NÚMEROS.                                                                     *
-        * 10. EJEMPLO LANZADOR/DESTRUCTOR DEL PROCESO DEL BLOC DE NOTAS.                                   *
-        *                                                                                                  *
-        ****************************************************************************************************
-        *  0. SALIR.                                                                                       *
-        ****************************************************************************************************
+        *******************************************************************************************
+        """ + Principal_Main.Main.asignatura + """
+        *******************************************************************************************
+        """ + Principal_Main.Main.tema_03 + """
+        *******************************************************************************************
+        *
+        """ + punto_01 + """         
+        """ + punto_02 + """
+        """ + punto_03 + """                        
+        """ + punto_04 + """
+        """ + punto_05 + """                        
+        """ + punto_06 + """
+        """ + punto_07 + """
+        *                
+        """ + punto_08 + """
+        """ + punto_09 + """                        
+        """ + punto_10 + """
+        *
+        *******************************************************************************************
+        *  0. SALIR.
+        *******************************************************************************************
                                
                                """);
             try {
@@ -67,6 +78,5 @@ public class T_03 {
                 System.out.println("La Excepción es: " + e.getClass());
             }
         } while (!"0".equals(menu));
-    }
-    
+    }    
 }

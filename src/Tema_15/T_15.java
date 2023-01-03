@@ -1,4 +1,4 @@
-package Tema_06;
+package Tema_15;
 
 import static Principal_Main.Main.esperar;
 import static Principal_Main.Main.meterEspacios;
@@ -8,21 +8,23 @@ import java.util.Scanner;
  *
  * @author Juan José Estévez González
  */
-
-public class T_06 {
+public class T_15 {
     
-    public static String punto_01 ="*  PUNTO  1.  PROBLEMAS ASOCIADOS A LA SINCRONIZACIÓN.\n";
-    public static String punto_02 ="*  PUNTO  2.  HERRAMIENTAS PARA SINCRONIZACIÓN: MONITORES.\n";
-    public static String punto_03 ="*  PUNTO  3.  PROBLEMA DEL PRODUCTOR-CONSUMIDOR.\n";
-    public static String punto_04 ="*  PUNTO  4.  SOLUCIÓN DEL PROBLEMA DEL PRODUCTOR-CONSUMIDOR. MONITORES.\n";
-    public static String punto_05 ="*  PUNTO  5.  HERRAMIENTAS PARA SINCRONIZACIÓN: SEMÁFOROS.\n";
-    public static String punto_06 ="*  PUNTO  6.  EL PROBLEMA DE LOS FUMADORES.\n";
-    public static String punto_07 ="*  PUNTO  7.  EL PROBLEMA DE LOS FILÓSOFOS.\n";
-    public static String punto_08 ="*  PUNTO  8.  EL PROBLEMA DEL BARBERO.\n";
-    public static String punto_09 ="*  PUNTO  9.  EJEMPLO 1 PRODUCTOR-CONSUMIDOR. SIN MONITORES.\n";
-    public static String punto_10 ="*  PUNTO 10.  EJEMPLO 1 PRODUCTOR-CONSUMIDOR. CON MONITORES.\n";
-    public static String punto_11 ="*  PUNTO 11.  EJEMPLO 2 PRODUCTOR-CONSUMIDOR. SIN MONITORES.\n";
-    public static String punto_12 ="*  PUNTO 12.  EJEMPLO 2 PRODUCTOR-CONSUMIDOR. CON MONITORES.\n";
+    public static String punto_01 ="*  PUNTO  1.\n";
+    public static String punto_02 ="*  PUNTO  2.\n";
+    public static String punto_03 ="*  PUNTO  3.\n";
+    public static String punto_04 ="*  PUNTO  4.\n";
+    public static String punto_05 ="*  PUNTO  5.\n";
+    public static String punto_06 ="*  PUNTO  6.\n";
+    public static String punto_07 ="*  PUNTO  7.\n";
+    public static String punto_08 ="*  PUNTO  8.\n";
+    public static String punto_09 ="*  PUNTO  9.\n";
+    public static String punto_10 ="*  PUNTO 10.\n";
+    public static String punto_11 ="*  PUNTO 11.\n";
+    public static String punto_12 ="*  PUNTO 12.\n";
+    public static String punto_13 ="*  PUNTO 13.\n";
+    public static String punto_14 ="*  PUNTO 14.\n";
+    public static String punto_15 ="*  PUNTO 15.\n";
     
     public static void main(String[] args)  {
         
@@ -35,7 +37,7 @@ public class T_06 {
         *******************************************************************************************
         """ + Principal_Main.Main.asignatura + """
         *******************************************************************************************
-        """ + Principal_Main.Main.tema_06 + """
+        """ + Principal_Main.Main.tema_15 + """
         *******************************************************************************************
         *
         """ + punto_01 + """                        
@@ -46,32 +48,28 @@ public class T_06 {
         """ + punto_06 + """
         """ + punto_07 + """                        
         """ + punto_08 + """
-        *
         """ + punto_09 + """                        
         """ + punto_10 + """
-        *
         """ + punto_11 + """
-        """ + punto_12 + """
+        """ + punto_12 + """                        
+        """ + punto_13 + """
+        """ + punto_14 + """                        
+        """ + punto_15 + """
         *
         *******************************************************************************************
         *  0. SALIR.
         *******************************************************************************************
                                
                                """);
+                               
             try {
                 System.out.print("Seleccione una opción: ");
                 menu = teclaStr.nextLine();
                 meterEspacios(25);
                 switch (menu) {
                     
-                    case "1", "2", "3", "4", "5", "6", "7", "8" -> Recursos_06.recurso(menu);
+                    case "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" -> Recursos_15.recurso(menu); 
                     
-                    case "9" -> ProblemaProductorConsumidor_01.main(args);
-                    case "10" -> ProblemaProductorConsumidor_02.main(args);
-                    
-                    case "11" -> ProblemaProductorConsumidor_03.main(args);
-                    case "12" -> ProblemaProductorConsumidor_04.main(args);
-                   
                     case "0" -> {}
                     default -> {
                             meterEspacios(25);
@@ -86,5 +84,5 @@ public class T_06 {
                 System.out.println("La Excepción es: " + e.getClass());
             }
         } while (!"0".equals(menu));
-    }    
+    }
 }

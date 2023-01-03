@@ -2,6 +2,7 @@ package Tema_07;
 
 import static Principal_Main.Main.esperar;
 import static Principal_Main.Main.meterEspacios;
+import static Tema_07.T_07.*;
 import java.util.Scanner;
 
 /**
@@ -11,12 +12,15 @@ import java.util.Scanner;
 
 public class Recursos_07 {
     
+    private static String titulo = Principal_Main.Main.asignatura + Principal_Main.Main.tema_07 ;
+    
     private static String recurso_01 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 7:        INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.      *
+        """ + titulo + """
         ************************************************************************************************************************
-                                                  REDES Y PROTOLOS.
+        """ + punto_01 + """
+        ************************************************************************************************************************
                                        
             - UN PROTOCOLO ES UN CONJUNTO FORMAL DE ESTÁNDARES Y NORMAS.
               ESTOS RIGEN TANTO EL FORMATO COMO EL CONTROL DE LA INTERACCIÓN
@@ -39,7 +43,7 @@ public class Recursos_07 {
               DE ELLAS FUERA SENCILLA, AL TRABAJAR TODAS DE LA MISMA FORMA.
                                       
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -47,9 +51,10 @@ public class Recursos_07 {
     private static String recurso_02 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 7:        INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                           EL MODELO DE REFERENCIA OSI.
+        """ + punto_02 + """
+        ************************************************************************************************************************
                                        
             - EL MODELO OSI ESTÁ FORMADO POR SIETE CAPAS QUE DIVIDEN EL FUNCIONAMIENTO Y ESTADOS 
               POR LOS QUE DEBEN PASAR LOS DATOS PARA VIAJAR DE UNA RED A OTRA.
@@ -84,7 +89,7 @@ public class Recursos_07 {
 HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE FÍSICO -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> HOST DESTINO
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -92,9 +97,10 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
     private static String recurso_03 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 7:        INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                                  EL MODELO TCP/IP.
+        """ + punto_03 + """
+        ************************************************************************************************************************
                                        
             - EL PROTOCOLO MÁS COMÚN ES EL DICTADO POR EL MODELO TCP/IP, EL CUAL CONSTA DE LAS SIGUIENTES CUATRO CAPAS:
                                        
@@ -153,16 +159,17 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
                 HOST ORIGEN -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE FÍSICO -> 1 -> 2 -> 3 -> 4 -> HOST DESTINO
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_04 =  """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 7:        INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                                CORRESPONDENCIA ENTRE OSI Y TCP/IP.
+        """ + punto_04 + """
+        ************************************************************************************************************************
                                         
                       *******************************                             *******************************
                       *         MODELO OSI          *                             *        MODELO TCP/IP        *
@@ -186,16 +193,17 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
                   *********************************** - - - - - - - - - - - - - - ***********************************
                                         
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_05 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 7:        INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                               COMPARATIVA ENTRE OSI Y TCP/IP.
+        """ + punto_05 + """
+        ************************************************************************************************************************
                                        
             - EL PROTOCOLO DE CONTROL DE TRANSMISIÓN (TCP)/PROTOCOLO DE INTERNET (IP)
               SE USA POPULARMENTE EN LA DESCRIPCIÓN DE LA RED Y ES MÁS ANTIGUO QUE EL MODELO OSI.
@@ -223,16 +231,17 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
             - EN EL MODELO TCP/IP PODRÍAMOS TENER DISTINTOS PROTOCOLOS, SMTP, HTTP, FTP, ETC...
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_06 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 7:        INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                    PROTOCOLOS DE COMUNICACIONES: PROTOCOLO TCP.
+        """ + punto_06 + """
+        ************************************************************************************************************************
                                        
             - EN LA CAPA DE TRANSPORTE DEL MODELO TCP/IP Y EN LA CAPA DE TRANSPORTE DEL MODELO OSI, ES DONDE SE REALIZA TODO
               LO RELACIONADO CON LA TRANSFERENCIA DE DATOS Y CORRECIÓN DE ERRORES DE ESTOS, 
@@ -267,16 +276,17 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
             - PAQUETE:   FRAGMENTO DE INFORMACIÓN - INCLUYE UN NÚMERO DE ORDEN. - LO USA EL PROTOCOLO TCP.
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_07 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 7:        INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                        PROTOCOLOS DE COMUNICACIONES: PROTOCOLO UDP.
+        """ + punto_07 + """
+        ************************************************************************************************************************
                                        
             - OTRO PROTOCOLO DE LA CAPA DE TRANSPORTE ES EL PROTOCOLO DE DATAGRAMAS DE USUARIO -> UDP -> USER DATAGRAM PROTOCOL.
               UDP ES UN PROTOCOLO NO ORIENTADO A LA CONEXIÓN, PORQUE NO INCLUYE NINGÚN MECANISMO PARA LA SINCRONIZACIÓN EN EL
@@ -326,16 +336,17 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
             - PAQUETE:   FRAGMENTO DE INFORMACIÓN - INCLUYE UN NÚMERO DE ORDEN. - LO USA EL PROTOCOLO TCP.
                                       
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_08 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 7:        INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                               COMPARATIVA ENTRE LOS PROTOCOLOS TCP Y UDP.
+        """ + punto_08 + """
+        ************************************************************************************************************************
                                        
         ************************************************************************************************************************
         *                                  *              T C P                      *                 U D P                   *
@@ -362,16 +373,17 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
               CONTROL DE LA LLEGADA O NÚMERO DE PAQUETE, CONTROL DE FLUJO, ETC...
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_09 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 7:        INTRODUCCIÓN A LA COMUNICACIÓN ENTRE APLICACIONES.      *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                     LOS PUERTOS. ALEATORIOS, CONOCIDOS, REGISTRADOS Y DINÁMICOS.
+        """ + punto_09 + """
+        ************************************************************************************************************************
                                        
             - PARA LOGRAR QUE LA INFORMACIÓN VAYA DE UN EXTREMO A OTRO DE LA COMUNICACIÓN,
               DEBEMOS UTILIZAR LA CAPA DE RED Y POR EJEMPLO UTILIZANDO EL PROTOCOLO TCP O EL UDP,
@@ -410,16 +422,17 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
                             SU USO ES ATENDER A CONEXIONES TEMPORALES ENTRE APLICACIONES.
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_10 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 6:                SINCRONIZACIÓN DE VARIOS HILOS.                 *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                         INTRODUCCIÓN AL TRÁFICO DE RED.
+        """ + punto_10 + """
+        ************************************************************************************************************************
                                        
             - USAREMOS EL CMD PARA PRACTICAR ESTOS COMANDOS:                                       
                                        
@@ -453,16 +466,17 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
                             - PODRÁS VER LA CLAVE ENVIADA EN ESA PÁGINA WEB.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_11 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 6:                SINCRONIZACIÓN DE VARIOS HILOS.                 *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                         BIBLIOTECAS PARA NETWORKING EN JAVA.
+        """ + punto_11 + """
+        ************************************************************************************************************************
                                        
             - InetAddress:
                     - ESTA CLASE NOS VA A PERMITIR ENCONTRAR UN NOMBRE DE DOMINIO A PARTIR DE SI DIRECCIÓN IP, Y VICEVERSA.
@@ -500,16 +514,17 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
                     - MEDIANTE ESTA CLASE PODREMOS ENVIAR MENSAJES A MÚLTIPLES CLIENTES O SERVIDORES.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_12 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.       TEMA 6:                SINCRONIZACIÓN DE VARIOS HILOS.                 *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                        TABLA DE LA BIBLIOTECAS PARA NETWORKING EN JAVA.
+        """ + punto_12 + """
+        ************************************************************************************************************************
                                        
         ************************************************************************************************************************                               
         *   CLASE              *   UTILIDAD            *                   
@@ -518,7 +533,7 @@ HOST ORIGEN -> 7 -> 6 -> 5 -> 4 -> 3 -> 2 -> 1 ->ENLACE FÍSICO-INTERNET-ENLACE F
         *                      * DE SERVIDORES             E N   C O N S T R U C C I Ó N
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;

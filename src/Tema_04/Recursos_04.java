@@ -1,8 +1,8 @@
 package Tema_04;
 
-import Tema_03.*;
 import static Principal_Main.Main.esperar;
 import static Principal_Main.Main.meterEspacios;
+import static Tema_04.T_04.*;
 import java.util.Scanner;
 
 /**
@@ -12,12 +12,15 @@ import java.util.Scanner;
 
 public class Recursos_04 {
     
+    private static String titulo = Principal_Main.Main.asignatura + Principal_Main.Main.tema_04 ;
+    
     private static String recurso_01 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.     TEMA 4:       INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO.       *
+        """ + titulo + """
         ************************************************************************************************************************
-                                            HILOS DE EJECUCIÓN EN UN PROCESO I.
+        """ + punto_01 + """
+        ************************************************************************************************************************
                                        
             - LA PROGRAMACIÓN PARALELA O MULTIHILO:
                     - ES UN TIPO DE PROGRAMACIÓN CONCURRENTE CAPAZ DE EJECUTAR AL MISMO TIEMPO VARIAS TAREAS O HILOS.
@@ -38,7 +41,7 @@ public class Recursos_04 {
                       AL TERMINAR DE EJECUTARSE TODOS LOS HILOS QUE HAYA LANZADO EL PROCESO ACTIVO EN EJECUCIÓN.
                                       
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -46,9 +49,10 @@ public class Recursos_04 {
     private static String recurso_02 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.     TEMA 4:       INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO.       *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                            HILOS DE EJECUCIÓN EN UN PROCESO II.
+        """ + punto_02 + """
+        ************************************************************************************************************************
         
             - DESDE EL MISMO MOMENTO QUE EJECUTAMOS UN PROGRAMA SE CREAN TAMBIÉN TANTO UN PROCESO COMO UN HILO PRIMARIO.
               SI NOS QUEDAMOS CON UN ÚNICO HILO, ES MUY SIMILAR A UN PROGRAMA SECUENCIAL NORMAL.
@@ -65,7 +69,7 @@ public class Recursos_04 {
                       ÉSTE PUEDE INTERACTUAR CON OTROS PROCESOS QUE YA EXISTAN.                                       
                                        
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
@@ -73,9 +77,9 @@ public class Recursos_04 {
     private static String recurso_03 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.     TEMA 4:       INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO.       *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                                VENTAJAS Y DESVENTAJAS DEL USO DE HILOS:
+        """ + punto_03 + """
         ************************************************************************************************************************
                                 VENTAJAS                           *                      INCONVENIENTES
         ************************************************************************************************************************
@@ -99,16 +103,17 @@ public class Recursos_04 {
              PARALELA (EJECUCIÓN DE VARIAS INSTRUCCIONES AL MISMO  *
              TIEMPO).                                              *
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_04 =  """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.     TEMA 4:       INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO.       *
+        """ + titulo + """  
         ************************************************************************************************************************
-                        RECURSOS COMPARTIDOS POR LOS HILOS. ELEMENTOS PROPIOS DE UN HILO Y RECURSOS COMPARTIDOS.
+        """ + punto_04 + """
+        ************************************************************************************************************************
                                         
             - CADA HILO ESTÁ COMPUESTO DE LOS SIGUIENTES ELEMENTOS PROPIOS E INDIVIDUALES:
                     - IDENTIFICADOR PROPIO: CADA HILO PODRÁ SER IDENTIFICADO DE FORMA RÁPIDA.
@@ -122,16 +127,17 @@ public class Recursos_04 {
                     - RECURSOS DEL SISTEMA OPERATIVO: FICHEROS, SOCKETS, BASES DE DATOS, ETC...
                                         
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_05 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.     TEMA 4:       INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO.       *
+        """ + titulo + """  
         ************************************************************************************************************************
-                       RECURSOS COMPARTIDOS POR LOS HILOS. RIESGOS POR LA COMPARTICIÓN DE RECURSOS EN LOS HILOS.
+        """ + punto_05 + """
+        ************************************************************************************************************************
                                        
             - ¿QUÉ OCURRIRÍA SI HILOS DIFERENTES NECESITAN ACCEDER A UNA MISMA VARIABLE GLOBAL PARA REALIZAR UN CÁLCULO,
               PUDIENDO CAMBIAR EL VALOR DE DICHA VARIABLE?
@@ -143,16 +149,17 @@ public class Recursos_04 {
                     - SU IMPLEMENTACIÓN NO ES NADA SENCILLA Y COMPLICARÁN BASTANTE NUESTROS PROGRAMAS.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_06 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.     TEMA 4:       INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO.       *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                                ESTADOS DE UN HILO.
+        """ + punto_06 + """
+        ************************************************************************************************************************
                                        
             - LOS HILOS, AL IGUAL QUE LOS PROCESOS, TIENEN UN CICLO DE VIDA DETERMINADO POR UNA SERIE DE ESTADOS.
                     - ESTOS SON IGUALES TANTO PARA LOS HILOS DE USUARIO COMO PARA LOS HILOS DEMONIO O DE SISTEMA.
@@ -193,16 +200,17 @@ public class Recursos_04 {
                               EN ESPERA DE QUE EL SISTEMA OPERATIVO LO DESTRUYA Y LIBERE RECURSOS.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
     private static String recurso_07 = """                          
                                
         ************************************************************************************************************************
-        *   PROGRAMACIÓN DE SERVICIOS Y PROCESOS.     TEMA 4:       INTRODUCCIÓN A LA PROGRAMACIÓN PARALELA O MULTIHILO.       *
+        """ + titulo + """  
         ************************************************************************************************************************
-                                               CLASES PARA HILOS EN JAVA.       PAQUETE java.lang
+        """ + punto_07 + """
+        ************************************************************************************************************************
                                        
             - CLASE Thread:
                     - CREA HILOS CON EL CÓDIGO QUE QUERAMOS QUE SE EJECUTEN.
@@ -230,12 +238,10 @@ public class Recursos_04 {
                     - getState() -->  DEVUELVE EL ESTADO EN EL QUE SE ENCUENTRA ACTUALMENTE EL HILO.
 
         ************************************************************************************************************************
-        *  0. SALIR.                                                                                                           *
+        *  0. SALIR.
         ************************************************************************************************************************
                                
                                """;
-    
-    
     
     public static void recurso(String opcion) {
         
