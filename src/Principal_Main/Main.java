@@ -8,8 +8,10 @@ import java.util.Scanner;
  */
 
 public class Main {    
-        
+    
+    public static String curso ="*  TÉCNICO EN DESARROLLO DE APLICACIONES MULTIPLATAFORMA.\n";
     public static String asignatura ="*  PROGRAMACIÓN DE SERVICIOS Y PROCESOS.\n";
+    
     public static String tema_01 ="*  TEMA  1.  TIPOS DE PROGRAMACIÓN.\n";
     public static String tema_02 ="*  TEMA  2.  PROCESOS.\n";
     public static String tema_03 ="*  TEMA  3.  GESTIÓN DE PROCESOS.\n";
@@ -33,7 +35,9 @@ public class Main {
             Scanner teclaStr = new Scanner(System.in, "UTF-8");
             meterEspacios(25);
             System.out.println("""                          
-                               
+        
+        *******************************************************************
+        """ + curso + """
         *******************************************************************
         """ + asignatura + """
         *******************************************************************
