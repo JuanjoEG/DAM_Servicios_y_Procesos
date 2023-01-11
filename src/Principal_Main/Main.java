@@ -22,7 +22,7 @@ public class Main {
     public static String tema_08 ="*  TEMA  8.  MODELOS DE COMUNICACIONES.\n";
     public static String tema_09 ="*  TEMA  9.  PROTOCOLOS A NIVEL DE APLICACIÓN.\n";
     public static String tema_10 ="*  TEMA 10.  LOS SERVICIOS DE RED. SOCKETS I.\n";
-    public static String tema_11 ="*  TEMA 11.  \n";
+    public static String tema_11 ="*  TEMA 11.  LOS SERVICIOS EN RED. SOCKETS II.\n";
     public static String tema_12 ="*  TEMA 12.  \n";
     public static String tema_13 ="*  TEMA 13.  \n";
     public static String tema_14 ="*  TEMA 14.  \n";
@@ -87,16 +87,11 @@ public class Main {
                    
                     case "0" -> {}
                     default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
+                            miDefault();
                             }
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));
     }
@@ -105,7 +100,7 @@ public class Main {
         try {            
             Thread.sleep(segundos);
         } catch (Exception e) {
-            System.out.println(e);
+            miError(e);
         }
     }
     
@@ -115,5 +110,62 @@ public class Main {
                 System.out.println("");
             }
     
+    }
+    
+    public static void continuar() {
+        String menu;
+        do {
+            Scanner teclaStr = new Scanner(System.in, "UTF-8");
+            System.out.print("Seleccione la opción '0': ");
+            menu = teclaStr.nextLine();
+            meterEspacios(25);
+            if (!"0".equals(menu)) {
+                miDefault();
+            }
+        } while (!"0".equals(menu));
+    }
+    
+    public static void miDefault() {
+    
+        meterEspacios(25);
+        System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
+        meterEspacios(15);
+        esperar(1500);
+        meterEspacios(25);
+    }
+    
+    public static String miTry () {
+    
+        Scanner teclaStr = new Scanner(System.in, "UTF-8");
+        System.out.print("Seleccione una opción: ");
+        String menu = teclaStr.nextLine();
+        meterEspacios(25);
+        return menu;
+    }
+    
+    public static String miTryRecursos() {
+    
+        Scanner teclaStr = new Scanner(System.in, "UTF-8");
+        System.out.print("Seleccione la opción '0': ");
+        String menu = teclaStr.nextLine();
+        meterEspacios(25);
+        switch (menu) {
+            case "0" -> {}
+            default -> {                
+                miDefault();
+            }
+        }
+        return menu;
+    }
+    
+    public static void miError(Exception e) {
+    
+        System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+        System.out.println("Error: " + e.toString());
+        System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+        System.out.println("MENSAJE " + e.getMessage());
+        System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
+        System.out.println("La Excepción es: " + e.getClass());
+        System.out.println("\n* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n");
     }
 }

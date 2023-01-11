@@ -1,9 +1,7 @@
 package Tema_09;
 
-import static Principal_Main.Main.esperar;
-import static Principal_Main.Main.meterEspacios;
+import static Principal_Main.Main.*;
 import static Tema_09.T_09.*;
-import java.util.Scanner;
 
 /**
  *
@@ -20,7 +18,7 @@ public class Recursos_09 {
         """ + titulo + """
         ************************************************************************************************************************
         """ + punto_01 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *   UNA RED DE ORDENADORES ES:                                                                                         *
         *      - UN SISTEMA DE TELECOMUNICACIONES INTERCONECTADO ENTRE SÍ                                                      *
         *        Y QUE TIENE LA FINALIDAD DE COMPARTIR INFORMACIÓN O RECURSOS.                                                 *
@@ -46,7 +44,7 @@ public class Recursos_09 {
         *      - SERVICIOS DE INFORMACIÓN.                    ->  HTTP.         -> EN FUNCIÓN DE SU CONTENIDO.                 *
         *      - SERVICIOS DE COMUNICACIÓN.                   ->  SMTP.         -> COMUNICACIÓN A TRAVÉS DE MENSAJES.          *
         *                                                                                                                      *
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -58,7 +56,7 @@ public class Recursos_09 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_02 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *   EN EL MODELO TCP/IP:                                                                                               *
         *       - CAPA DE APLICACIÓN:      ->  REPRESENTA LOS DATOS PARA EL USUARIO Y EL CONTROL DE CODIFICACIÓN Y DE DIÁLOGO. *
         *       - CAPA DE TRANSPORTE:      ->  ADMITE LA COMUNICACIÓN ENTRE DISTINTOS DISPOSITIVOS DE DISTINTAS REDES.         *
@@ -104,7 +102,7 @@ public class Recursos_09 {
         *      - SSH    -> SECURE SHELL                   -> INTÉRPRETE DE ÓRDENES SEGURO.                                     *
         *      - SFTP   -> SECURE FILE TRANSFER PROTOCOL  -> SE ENCARGA DE LA TRANSFERENCIA DE FICHEROS ENCRIPTADOS.           *
         *                                                                                                                      *
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -116,7 +114,7 @@ public class Recursos_09 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_03 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *   SE ENCARGA DE TRADUCIR LAS DIRECCIONES IP A NOMBRES DE DOMINIO Y VICEVERSA.                                        *
         *   TODOS LOS DISPOSITIVOS CONECTADOS POR TCP/IP SE VAN A IDENTIFICAR MEDIANTE UNA DIRECCIÓN DE RED IP. FORMATO IPv4.  *
         *        - LAS IPv4 SE COMPONEN DE CUATRO NÚMEROS, CADA UNO DE ELLOS DEL 0 AL 255, Y SEPARADOS POR UN PUNTO.           *
@@ -146,7 +144,7 @@ public class Recursos_09 {
         *       - USA UNA BASE DE DATOS DISTRIBUIDA, SEPARADA EN DIFERENTES ELEMENTO EN LA RED, POR TEMAS DE SEGURIDAD.        *
         *       - SE ENCARGA DE ALMACENAR TODA LA INFORMACIÓN ASOCIADA A NOMBRES DE DOMINIO.                                   *
         *                                                                                                                      *
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -157,7 +155,7 @@ public class Recursos_09 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_04 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *   HOY EN DÍA, UNA DE LAS FUNCIONALIDADES MÁS USADAS EN LAS REDES ES LA DE TRANSFERIR FICHEROS.                       *
         *   EL PROTOCOLO FTP PROPORCIONA ESTE SERVICIO DE TRANSFERENCIA.                                                       *
         *   SUS FUNCIONALIDADES DEFINEN UN ESTÁNDAR EN LA TRANSFERENCIA DE FICHEROS EN LAS REDES TCP/IP.                       *
@@ -190,7 +188,7 @@ public class Recursos_09 {
         *                 - VERSIÓN CLIENTE PARA TRANSFERIR ARCHIVOS.                                                          *
         *                 - VERSIÓN SERVER PARA COMPARTIR ARCHIVOS.                                                            *
         *                                                                                                                      *
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -201,7 +199,7 @@ public class Recursos_09 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_05 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *   EL CORREO ELECTRÓNICO PERMITE ENVIAR Y RECIBIR MENSAJES CON O SIN ARCHIVOS ADJUNTOS DE FORMA RÁPIDA.               *
         *   ES EL PROTOCOLO SMPT ES EL QUE POSIBILITA ESTA FUNCIONALIDAD.                                                      *
         *   SE ENCUENTRA EN LA CAPA DE APLICACIONES Y SIGUE EL MODELO CLIENTE/SERVIDOR.                                        *
@@ -227,7 +225,7 @@ public class Recursos_09 {
         *                                                                                                                      *
         ************************************************************************************************************************
         *   SMTP - POP3 - IMAP --> NOS PERMITEN TAMBIÉN ENVIAR CUALQUIER TIPO DE DOCUMENTO DIGITALIZADO.                       *
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -238,7 +236,7 @@ public class Recursos_09 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_06 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *   EL PROTOCOLO HTTP ES EL ENCARGADO DE QUE PODAMOS NAVEGAR POR INTERNET DE FORMA CORRECTA.                           *
         *   EL PROTOCOLO HTTP ESTÁ COMPUESTO POR UNA NORMAS QUE POSIBILITAN:                                                   *
         *            - UNA COMUNICACIÓN ENTRE CLIENTE Y SERVIDOR.                                                              *
@@ -269,7 +267,7 @@ public class Recursos_09 {
         *       - EL SERVIDOR CONTESTA AL CLIENTE Y ENVÍA EL CÓDIGO HTML.                                                      *
         *       - EL CLIENTE VISUALIZA EL HTML EN UN NAVEGADOR Y CIERRA LA CONEXIÓN PERDIENDO EL ESTADO.                       *
         *                                                                                                                      *
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -280,7 +278,7 @@ public class Recursos_09 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_07 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *   COMUNICACIÓN:                                                                                                      *
         *                                                                                                                      *
         *      - ES EN LA CAPA DE APLICACIÓN DEL MODELO OSI LA QUE SE VA A COMUNICAR CON LA CAPA DE TRANSPORTE.                *
@@ -302,7 +300,7 @@ public class Recursos_09 {
         *            - SERÁN FLUJOS DE ENTRADA Y DE SALIDA ENTRE CLIENTE Y SERVIDOR.                                           *
         *      - SE CIERRAN LAS CONEXIONES TANTO EL SOCKET DEL SERVIDOR COMO EL SOCKET DEL CLIENTE.                            *
         *                                                                                                                      *
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -314,12 +312,12 @@ public class Recursos_09 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_08 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *                                                                                                                      *
         *  ipconfig               tracert www.google.es        telnet 192.168.0.181                                            *
         *  ipconfig/all           ipconfig/displaydns                                                                          *
         *                                                                                                                      *
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -329,8 +327,6 @@ public class Recursos_09 {
         
         String menu="";
         do {
-            Scanner teclaStr = new Scanner(System.in, "UTF-8");
-            
             switch (opcion) {                
                 case "1" -> System.out.println(recurso_01);
                 case "2" -> System.out.println(recurso_02);
@@ -340,24 +336,34 @@ public class Recursos_09 {
                 case "6" -> System.out.println(recurso_06); 
                 case "7" -> System.out.println(recurso_07);
                 case "8" -> System.out.println(recurso_08);
+                case "9" -> {
+                    System.out.println(recurso_01);
+                    continuar();
+                    System.out.println(recurso_02);
+                    continuar();
+                    System.out.println(recurso_03);
+                    continuar();
+                    System.out.println(recurso_04);
+                    continuar();
+                    System.out.println(recurso_05);
+                    continuar();
+                    System.out.println(recurso_06);
+                    continuar();
+                    System.out.println(recurso_07);
+                    continuar();
+                    System.out.println(recurso_08);
+                }
             }
-            try {
-                System.out.print("Seleccione una opción: ");
-                menu = teclaStr.nextLine();
-                switch (menu) {
-                   
+            try {                
+                menu = miTryRecursos();                
+                switch (menu) {                   
                     case "0" -> {}
                     default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
+                            miDefault();
                             }
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));   
     }

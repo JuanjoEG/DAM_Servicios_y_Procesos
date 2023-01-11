@@ -1,8 +1,6 @@
 package Tema_10;
 
-import static Principal_Main.Main.esperar;
-import static Principal_Main.Main.meterEspacios;
-import java.util.Scanner;
+import static Principal_Main.Main.*;
 
 /**
  *
@@ -22,12 +20,12 @@ public class T_10 {
     public static String punto_10 ="*  PUNTO 10.  PROGRAMACIÓN DE UN CLIENTE UDP.\n";
     public static String punto_11 ="*  PUNTO 11.  CÓDIGO DE UN CLIENTE UDP SIMPLE.\n";
     public static String punto_12 ="*  PUNTO 12.  CAPTURAR EL TRÁFICO UDP CON WIRESCHARK.\n";
+    public static String punto_13 ="*  PUNTO 13.  T O D O.\n";
     
     public static void main(String[] args)  {
         
         String menu="";
         do {
-            Scanner teclaStr = new Scanner(System.in, "UTF-8");
             meterEspacios(25);
             System.out.println("""                          
                                
@@ -54,6 +52,8 @@ public class T_10 {
         *
         """ + punto_12 + """ 
         *
+        """ + punto_13 + """
+        *
         *******************************************************************************************
         *  0. SALIR.
         *******************************************************************************************
@@ -61,25 +61,18 @@ public class T_10 {
                                """);
                                
             try {
-                System.out.print("Seleccione una opción: ");
-                menu = teclaStr.nextLine();
-                meterEspacios(25);
+                menu = miTry();
                 switch (menu) {
                     
-                    case "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12" -> Recursos_10.recurso(menu); 
+                    case "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13" -> Recursos_10.recurso(menu); 
                     
                     case "0" -> {}
                     default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
+                            miDefault();
                             }
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));
     }

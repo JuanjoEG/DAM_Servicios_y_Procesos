@@ -1,8 +1,6 @@
 package Tema_11;
 
-import static Principal_Main.Main.esperar;
-import static Principal_Main.Main.meterEspacios;
-import java.util.Scanner;
+import static Principal_Main.Main.*;
 
 /**
  *
@@ -10,10 +8,10 @@ import java.util.Scanner;
  */
 public class T_11 {
     
-    public static String punto_01 ="*  PUNTO  1.\n";
-    public static String punto_02 ="*  PUNTO  2.\n";
-    public static String punto_03 ="*  PUNTO  3.\n";
-    public static String punto_04 ="*  PUNTO  4.\n";
+    public static String punto_01 ="*  PUNTO  1.  INTRODUCCIÓN.\n";
+    public static String punto_02 ="*  PUNTO  2.  PROGRAMACIÓN DE UN CLIENTE HTTP.\n";
+    public static String punto_03 ="*  PUNTO  3.  EJEMPLO DE CLIENTE HTTP SENCILLO.\n";
+    public static String punto_04 ="*  PUNTO  4.  PROGRAMACIÓN DE UN CLIENTE FTP.\n";
     public static String punto_05 ="*  PUNTO  5.\n";
     public static String punto_06 ="*  PUNTO  6.\n";
     public static String punto_07 ="*  PUNTO  7.\n";
@@ -25,12 +23,12 @@ public class T_11 {
     public static String punto_13 ="*  PUNTO 13.\n";
     public static String punto_14 ="*  PUNTO 14.\n";
     public static String punto_15 ="*  PUNTO 15.\n";
+    public static String punto_16 ="*  PUNTO 16.  T O D O.\n";
     
     public static void main(String[] args)  {
         
         String menu="";
         do {
-            Scanner teclaStr = new Scanner(System.in, "UTF-8");
             meterEspacios(25);
             System.out.println("""                          
                                
@@ -56,6 +54,8 @@ public class T_11 {
         """ + punto_14 + """                        
         """ + punto_15 + """
         *
+        """ + punto_16 + """
+        *
         *******************************************************************************************
         *  0. SALIR.
         *******************************************************************************************
@@ -63,25 +63,18 @@ public class T_11 {
                                """);
                                
             try {
-                System.out.print("Seleccione una opción: ");
-                menu = teclaStr.nextLine();
-                meterEspacios(25);
+                menu = miTry();
                 switch (menu) {
                     
-                    case "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" -> Recursos_11.recurso(menu); 
+                    case "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16" -> Recursos_11.recurso(menu); 
                     
                     case "0" -> {}
                     default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
+                            miDefault();
                             }
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));
     }

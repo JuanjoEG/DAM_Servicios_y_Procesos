@@ -1,9 +1,7 @@
 package Tema_05;
 
-import static Principal_Main.Main.esperar;
-import static Principal_Main.Main.meterEspacios;
+import static Principal_Main.Main.*;
 import static Tema_05.T_05.*;
-import java.util.Scanner;
 
 /**
  *
@@ -20,7 +18,7 @@ public class Recursos_05 {
         """ + titulo + """
         ************************************************************************************************************************
         """ + punto_01 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                        
             - EN EL LENGUAJE DE PROGRAMACIÍN JAVA, UN HILO SERÁ CREADO MEDIANTE UNA INSTANCIA DE LA CLASE Thread,
               QUE NOS PERMITIRÁ GESTIONAR COMPLETAMENTE NUESTROS HILOS.
@@ -43,7 +41,7 @@ public class Recursos_05 {
             POR ESE MOTIVO, TENEMOS LA INTERFAZ Runnable, Y EN JAVA PODEMOS IMPLEMENTAR EN UNA MISMA CLASE TODAS LAS
             INTERFACES QUE NECESITEMOS.
                                       
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -55,7 +53,7 @@ public class Recursos_05 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_02 + """
-        ************************************************************************************************************************              
+        **********************************************************************************************************************************              
                                        
             - JAVA TAMBIÉN PERMITE CREAR HILOS IMPLEMENTANDO LA INTERFAZ RUNABLE.
             - EN ESTE CASO, LOS PASOS QUE HAY QUE DAR SON:
@@ -79,7 +77,7 @@ public class Recursos_05 {
             POR ESE MOTIVO, TENEMOS LA INTERFAZ Runnable, Y EN JAVA PODEMOS IMPLEMENTAR EN UNA MISMA CLASE TODAS LAS
             INTERFACES QUE NECESITEMOS.
                                        
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -91,7 +89,7 @@ public class Recursos_05 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_03 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                        
             - SI CREAMOS UN OBJETO DE UNA CLASE CON FUNCIONALIDAD DE HILO MEDIANTE HERENCIA DE THREAD: 
               NO LLEGA CON CREAR EL OBJETO CON new(); PARA QUE EL HILO SE EJECUTE Y PASE A SEGUNDO PLANO, 
@@ -110,7 +108,7 @@ public class Recursos_05 {
             UNA VEZ HEMOS LLAMADO AL MÉTODO start() DE UN HILO, NO PODEMOS HACERLO DE NUEVO, YA QUE EL HILO SE ESTÁ EJECUTANDO.
             EN CASO DE HACERLO, TENDRIAMOS UNA EXCEPCIÓN DEL TIPO   --->    IllegalThreadStateException.
                                        
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -121,7 +119,7 @@ public class Recursos_05 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_04 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                         
             - CUANDO ESTAMOS TRABAJANDO CON HILOS, A VECES NECESITAMOS DE UN BUCLE INFITO 
               PARA QUE LA HEBRA SE EJECUTE CONSTANTEMENTE EN SEGUNDO PLANO.
@@ -153,7 +151,7 @@ public class Recursos_05 {
                             - PERMITE FINALIZAR UN HILO, PERO EL PELIGRO QUE TIENE USARLO, ES QUE PUEDE DAR SITUACIONES 
                               DE INTERBLOQUEO DE HILOS Y HACER QUE NUESTRA APLICACIÓN SE BLOQUEE SIN POSIBILIDAD DE ARREGLO.                                        
                                         
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -164,7 +162,7 @@ public class Recursos_05 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_05 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                        
             - CUANDO TENEMOS VARIOS HILOS EJECUTÁNDOSE EN SEGUNDO PLANO, NO CONTROLAMOS CUÁL DE ELLOS SE EJECUTARÁ:
               ES EL PROPIO PLANIFICADOR DEL SISTEMA OPERATIVO ES QUIEN LO DECIDE.
@@ -188,7 +186,7 @@ public class Recursos_05 {
                     - DEBEMOS TENER CUIDADO CON EL MÉTODO join(), YA QUE, SI SE PRODUCE UN ERROR DE BLOQUEO CON LOS HILOS
                       ANTERIORES, NO HABRÁ FORMA DE QUE ESE CÓDIGO SE EJECUTE.   
                                        
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -199,7 +197,7 @@ public class Recursos_05 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_06 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                        
             - OTRA FORMA DE INFLUIR EN EL ORDEN DE LA EJECUCIÓN DE LOS HILOS, ES ESTABLECIENDO PRIORIDADES.
               EN JAVA, LA CLASE THREAD USA TRES CONSTANTES PARA LOS NIVELES DE PRIORIDAD RELATIVOS A LOS HILOS:
@@ -227,7 +225,7 @@ public class Recursos_05 {
                     - ESTE MÉTODO TAMPOCO GARANTIZA UN ORDEN EN LA EJECUCIÓN.
                       PUEDE QUE VUELVA A SER SELECCIONADO PARA EJECUTARSE INMEDIATAMENTE, Y EL yield() NO TENGA EFECTO.
                                        
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -237,8 +235,6 @@ public class Recursos_05 {
         
         String menu="";
         do {
-            Scanner teclaStr = new Scanner(System.in, "UTF-8");
-            
             switch (opcion) {                
                 case "1" -> System.out.println(recurso_01);
                 case "2" -> System.out.println(recurso_02);
@@ -246,24 +242,31 @@ public class Recursos_05 {
                 case "4" -> System.out.println(recurso_04);
                 case "5" -> System.out.println(recurso_05); 
                 case "6" -> System.out.println(recurso_06);
+                case "13" -> {
+                    System.out.println(recurso_01);
+                    continuar();
+                    System.out.println(recurso_02);
+                    continuar();
+                    System.out.println(recurso_03);
+                    continuar();
+                    System.out.println(recurso_04);
+                    continuar();
+                    System.out.println(recurso_05);
+                    continuar();
+                    System.out.println(recurso_06);
+                }
             }
             try {
-                System.out.print("Seleccione una opción: ");
-                menu = teclaStr.nextLine();
+                menu = miTryRecursos();
                 switch (menu) {
                    
                     case "0" -> {}
                     default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
+                            miDefault();
                             }
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));   
     }

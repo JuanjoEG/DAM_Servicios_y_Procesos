@@ -1,9 +1,7 @@
 package Tema_01;
 
-import static Principal_Main.Main.esperar;
-import static Principal_Main.Main.meterEspacios;
+import static Principal_Main.Main.*;
 import static Tema_01.T_01.*;
-import java.util.Scanner;
 
 /**
  *
@@ -20,7 +18,7 @@ public class Recursos_01 {
         """ + titulo + """
         ************************************************************************************************************************
         """ + punto_01 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                        
             - PROGRAMA:
                     - INFORMACIÓN, TANTO DE CÓDIGO COMO DE DATOS, ALMACENADA EN DISCO DE UNA APLICACIÓN
@@ -45,7 +43,7 @@ public class Recursos_01 {
                     - SE SUELE DECIR QUE SE EJECUTAN EN SEGUNDO PLANO. BACKGROUND.
                     - UN PROCESO PUEDE TENER UNO O VARIOS SERVICIOS.
                                        
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -57,7 +55,7 @@ public class Recursos_01 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_02 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
 
             - HILOS: (HEBRA O THREAD)
                     - ES CADA UNA DE LAS TAREAS QUE PODEMOS EJECUTAR EN PARALELO A OTRAS TAREAS.
@@ -88,7 +86,7 @@ public class Recursos_01 {
                       PARA CREAR UN PROCESO USANDO LOS DATOS ALMACENADOS DE UN PROGRAMA.
                     - PERMITE PONER EL PROGRAMA EN EJECUCIÓN COMO UN PROCESO.
 
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -100,7 +98,7 @@ public class Recursos_01 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_03 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
 
             - PROGRAMACIÓN CONCURRENTE:
                     - PROGRAMACIÓN PARA EJECUTAR AL MISMO TIEMPO VARIAS TAREAS INTERACTIVAS.
@@ -127,7 +125,7 @@ public class Recursos_01 {
                                             - ES UN TIPO ESPECIAL DE PROGRAMACIÓN CONCURRENTE MULTITAREA.
                                             - PERMITE LA EJECUCIÓN SIMULTANEA DE UNA O VARIAS TAREAS DE UN PROCESO.
 
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.                                                                                                           *
         ************************************************************************************************************************
                                
@@ -138,7 +136,7 @@ public class Recursos_01 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_04 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
 
             - PROGRAMACIÓN PARALELA:
                     - ES UN TIPO ESPECIAL DE PROGRAMACIÓN CONCURRENTE PORQUE PERSIGUE EJECUTAR VARIAS TAREAS AL MISMO TIEMPO.
@@ -163,7 +161,7 @@ public class Recursos_01 {
                     - GRANO FINO: AUTOMÁTICO, ADECUADO SI LAS SUBTAREAS SE COMUNICAN MUCHAS VECES POR SEGUNDO.
                     - GRANO GRUESO: MANUAL, A NIVEL DE CÓDIGO, ADECUADO SI LAS SUBTAREAS NO SE COMUNICAN MUCHAS VECES POR SEGUNDO.
 
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.                                                                                                           *
         ************************************************************************************************************************
                                
@@ -174,7 +172,7 @@ public class Recursos_01 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_05 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
 
             - SISTEMAS DISTRIBUIDOS:
                     - CONJUNTO DE ORDENADORES INTERCONECTADOS, COMPARTIENDO UN MISMO ESTADO 
@@ -202,7 +200,7 @@ public class Recursos_01 {
                                             - LAS MÁQUINAS QUE OFRECEN ESE SERVICIO PUEDEN ESTAR EN DIFERENTES PARTES DEL MUNDO
                                               Y ESTÁN INTERCONECTADAS.   
 
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.                                                                                                           *
         ************************************************************************************************************************
                                
@@ -212,33 +210,34 @@ public class Recursos_01 {
         
         String menu="";
         do {
-            Scanner teclaStr = new Scanner(System.in, "UTF-8");
-            
             switch (opcion) {                
                 case "1" -> System.out.println(recurso_01);
                 case "2" -> System.out.println(recurso_02);
                 case "3" -> System.out.println(recurso_03);
                 case "4" -> System.out.println(recurso_04);
                 case "5" -> System.out.println(recurso_05);                
-                
+                case "6" -> {
+                    System.out.println(recurso_01);
+                    continuar();
+                    System.out.println(recurso_02);
+                    continuar();
+                    System.out.println(recurso_03);
+                    continuar();
+                    System.out.println(recurso_04);
+                    continuar();
+                    System.out.println(recurso_05);                    
+                }
             }
-            try {
-                System.out.print("Seleccione una opción: ");
-                menu = teclaStr.nextLine();
-                switch (menu) {
-                   
+            try {                
+                menu = miTryRecursos();                
+                switch (menu) {                   
                     case "0" -> {}
                     default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
+                            miDefault();
                             }
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));   
     }

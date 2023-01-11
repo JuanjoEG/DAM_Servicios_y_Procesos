@@ -1,9 +1,7 @@
 package Tema_04;
 
-import static Principal_Main.Main.esperar;
-import static Principal_Main.Main.meterEspacios;
+import static Principal_Main.Main.*;
 import static Tema_04.T_04.*;
-import java.util.Scanner;
 
 /**
  *
@@ -20,7 +18,7 @@ public class Recursos_04 {
         """ + titulo + """
         ************************************************************************************************************************
         """ + punto_01 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                        
             - LA PROGRAMACIÓN PARALELA O MULTIHILO:
                     - ES UN TIPO DE PROGRAMACIÓN CONCURRENTE CAPAZ DE EJECUTAR AL MISMO TIEMPO VARIAS TAREAS O HILOS.
@@ -40,7 +38,7 @@ public class Recursos_04 {
                     - LOS RECURSOS SE LIBERAN CUANDO EL SISTEMA OPERATIVO PUEDA DESTRUIR EL PROCESO,
                       AL TERMINAR DE EJECUTARSE TODOS LOS HILOS QUE HAYA LANZADO EL PROCESO ACTIVO EN EJECUCIÓN.
                                       
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -52,7 +50,7 @@ public class Recursos_04 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_02 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         
             - DESDE EL MISMO MOMENTO QUE EJECUTAMOS UN PROGRAMA SE CREAN TAMBIÉN TANTO UN PROCESO COMO UN HILO PRIMARIO.
               SI NOS QUEDAMOS CON UN ÚNICO HILO, ES MUY SIMILAR A UN PROGRAMA SECUENCIAL NORMAL.
@@ -68,7 +66,7 @@ public class Recursos_04 {
                       CUANDO UN PROCESO CREA UN PROCESO HIJO,
                       ÉSTE PUEDE INTERACTUAR CON OTROS PROCESOS QUE YA EXISTAN.                                       
                                        
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -80,7 +78,7 @@ public class Recursos_04 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_03 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                 VENTAJAS                           *                      INCONVENIENTES
         ************************************************************************************************************************
            - COMPARTIR RECURSOS: DENTRO DE UN PROCESO, TODOS SUS   *  - COMPLICA LA PROGRAMACIÓN: ES TAREA DEL PROGRAMADOR
@@ -102,7 +100,7 @@ public class Recursos_04 {
              DIFERENTE, LO CUAL PERMITE USAR EL PROCESADOR DE FORMA*
              PARALELA (EJECUCIÓN DE VARIAS INSTRUCCIONES AL MISMO  *
              TIEMPO).                                              *
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -113,7 +111,7 @@ public class Recursos_04 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_04 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                         
             - CADA HILO ESTÁ COMPUESTO DE LOS SIGUIENTES ELEMENTOS PROPIOS E INDIVIDUALES:
                     - IDENTIFICADOR PROPIO: CADA HILO PODRÁ SER IDENTIFICADO DE FORMA RÁPIDA.
@@ -126,7 +124,7 @@ public class Recursos_04 {
                     - VARIABLES GLOBALES QUE SE ENCONTRARÁN EN LA ZONA CRÍTICA.
                     - RECURSOS DEL SISTEMA OPERATIVO: FICHEROS, SOCKETS, BASES DE DATOS, ETC...
                                         
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -137,7 +135,7 @@ public class Recursos_04 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_05 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                        
             - ¿QUÉ OCURRIRÍA SI HILOS DIFERENTES NECESITAN ACCEDER A UNA MISMA VARIABLE GLOBAL PARA REALIZAR UN CÁLCULO,
               PUDIENDO CAMBIAR EL VALOR DE DICHA VARIABLE?
@@ -148,7 +146,7 @@ public class Recursos_04 {
             - PARA PREVENIR Y RESOLVER ESTO POSIBLES PROBLEMAS, SE USARÁ UN ESQUEMA DE BLOQUEO Y SINCRONIZACIÓN ENTRE HILOS.
                     - SU IMPLEMENTACIÓN NO ES NADA SENCILLA Y COMPLICARÁN BASTANTE NUESTROS PROGRAMAS.
 
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -159,7 +157,7 @@ public class Recursos_04 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_06 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                        
             - LOS HILOS, AL IGUAL QUE LOS PROCESOS, TIENEN UN CICLO DE VIDA DETERMINADO POR UNA SERIE DE ESTADOS.
                     - ESTOS SON IGUALES TANTO PARA LOS HILOS DE USUARIO COMO PARA LOS HILOS DEMONIO O DE SISTEMA.
@@ -199,7 +197,7 @@ public class Recursos_04 {
                             - CUANDO EL HILO TERMINA SU EJECUCIÓN, PASA A ESTE ESTADO,
                               EN ESPERA DE QUE EL SISTEMA OPERATIVO LO DESTRUYA Y LIBERE RECURSOS.
 
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -210,7 +208,7 @@ public class Recursos_04 {
         """ + titulo + """  
         ************************************************************************************************************************
         """ + punto_07 + """
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
                                        
             - CLASE Thread:
                     - CREA HILOS CON EL CÓDIGO QUE QUERAMOS QUE SE EJECUTEN.
@@ -237,7 +235,7 @@ public class Recursos_04 {
                     - wait()     -->  HACE QUE EL HILO ESPERE LA EJECUCIÓN DE OTRA TAREA PARA VOLVER A EJECUTARSE.
                     - getState() -->  DEVUELVE EL ESTADO EN EL QUE SE ENCUENTRA ACTUALMENTE EL HILO.
 
-        ************************************************************************************************************************
+        **********************************************************************************************************************************
         *  0. SALIR.
         ************************************************************************************************************************
                                
@@ -247,8 +245,6 @@ public class Recursos_04 {
         
         String menu="";
         do {
-            Scanner teclaStr = new Scanner(System.in, "UTF-8");
-            
             switch (opcion) {                
                 case "1" -> System.out.println(recurso_01);
                 case "2" -> System.out.println(recurso_02);
@@ -257,24 +253,32 @@ public class Recursos_04 {
                 case "5" -> System.out.println(recurso_05); 
                 case "6" -> System.out.println(recurso_06);
                 case "7" -> System.out.println(recurso_07);
+                case "8" -> {
+                    System.out.println(recurso_01);
+                    continuar();
+                    System.out.println(recurso_02);
+                    continuar();
+                    System.out.println(recurso_03);
+                    continuar();
+                    System.out.println(recurso_04);
+                    continuar();
+                    System.out.println(recurso_05);
+                    continuar();
+                    System.out.println(recurso_06);
+                    continuar();
+                    System.out.println(recurso_07);
+                }
             }
-            try {
-                System.out.print("Seleccione una opción: ");
-                menu = teclaStr.nextLine();
-                switch (menu) {
-                   
+            try {                
+                menu = miTryRecursos();                
+                switch (menu) {                   
                     case "0" -> {}
                     default -> {
-                            meterEspacios(25);
-                            System.out.println("\n  ¡¡¡ LA OPCIÓN NO ES CORRECTA !!!");
-                            meterEspacios(15);
-                            esperar(1500);
+                            miDefault();
                             }
                 }
             }  catch (Exception e) {
-                System.out.println("Error: " + e.toString());
-                System.out.println("MENSAJE " + e.getMessage());
-                System.out.println("La Excepción es: " + e.getClass());
+                miError(e);
             }
         } while (!"0".equals(menu));   
     }
