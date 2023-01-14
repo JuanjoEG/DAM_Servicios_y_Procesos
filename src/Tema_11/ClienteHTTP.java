@@ -9,32 +9,25 @@ import java.net.URL;
 import java.net.URLConnection;
 
 /**
- *   EJEMPLO DE CLIENTE HTTP SENCILLO:
- *   LA SALIDA QUE SE OBTIENE ES EL 'CÓDIGO FUENTE' DE LA PÁGINA.
- *
- * @author Juan José Estévez González
+ *                                    EJEMPLO DE CLIENTE HTTP SENCILLO:
+ *                        LA SALIDA QUE SE OBTIENE ES EL 'CÓDIGO FUENTE' DE LA PÁGINA.
  */
 public class ClienteHTTP {
-    
+
     public static void main(String[] args) {
-        
-        try {
-        
-            // SE ABRE LA CONEXIÓN
-            URL url = new URL("http://www.google.es");
+
+        try {                        
+            URL url = new URL("http://www.google.es");                          // SE ABRE LA CONEXIÓN.
             URLConnection conexion = url.openConnection();
             conexion.connect();
-            
-            // LECTURA
-            InputStream is = conexion.getInputStream();
+
+            InputStream is = conexion.getInputStream();                         // LECTURA
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
-            
-            // ARRAY DE 1000 CARACTERES PARA GUARDAR EL CÓDIGO FUENTE DE LA PÁGINA WEB.
-            char[] buffer = new char[1000];
+
+            char[] buffer = new char[1000];                         // ARRAY DE 1000 CARACTERES PARA GUARDAR EL CÓDIGO FUENTE DE LA PÁGINA WEB.
             int leido;
-            
-            // MOSTRAMOS POR PANTALLA
-            while ((leido = br.read(buffer))>0) {            
+
+            while ((leido = br.read(buffer))>0) {                   // MOSTRAMOS POR PANTALLA
                 System.out.println(new String(buffer, 0, leido));
             }            
         } catch (MalformedURLException e) {    
