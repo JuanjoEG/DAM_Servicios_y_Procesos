@@ -68,7 +68,7 @@ public class T_05 {
                     case "8" -> IntroThreads.atencionColaConThread.main(args);
                     case "9" -> IntroThreads.atencionColaConRunnable.main(args);
                     
-                    case "10" -> ordenThreads.ReunionAlumnos.main(args);
+                    case "10" -> ordenThreads.Reunion_Alumnos.main(args);
                     case "11" -> ordenThreads.Reunion__Alumnos_Join.main(args);
                     case "12" -> ordenThreads.Reunion_Alumnos_Prioridad.main(args);
                    

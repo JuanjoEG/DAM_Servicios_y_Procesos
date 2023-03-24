@@ -4,7 +4,7 @@ package ordenThreads;
  *
  * @author Juan José Estévez González
  */
-public class ReunionAlumnos {
+public class Reunion_Alumnos {
     
     public static void main(String args[]) throws InterruptedException{      
         

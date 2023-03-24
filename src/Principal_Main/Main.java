@@ -25,8 +25,8 @@ public class Main {
     public static String tema_11 ="*  TEMA 11.  LOS SERVICIOS EN RED. SOCKETS II.\n";
     public static String tema_12 ="*  TEMA 12.  LOS SERVICIOS WEB.\n";
     public static String tema_13 ="*  TEMA 13.  LA PROGRAMACIÓN SEGURA.\n";
-    public static String tema_14 ="*  TEMA 14.  \n";
-    public static String tema_15 ="*  TEMA 15.  \n";
+    public static String tema_14 ="*  TEMA 14.  LA CRIPTOGRAFÍA.\n";
+    public static String tema_15 ="*  TEMA 15.  COMUNICACIONES SEGURAS.\n";
     
     public static void main(String[] args)  {
         
